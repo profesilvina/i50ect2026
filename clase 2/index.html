@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Subtítulos Grandes y Negrita */
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .video-placeholder {
+            position: relative; width: 100%; padding-top: 56.25%; background-size: cover; background-position: center; border-radius: 12px; cursor: pointer; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 24px 0; display: block; text-decoration: none;
+        }
+        .video-placeholder::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.2); transition: background 0.3s; }
+        .video-placeholder:hover::before { background: rgba(0,0,0,0.4); }
+        .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 0, 0, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+        .video-placeholder:hover .play-button { transform: translate(-50%, -50%) scale(1.1); background: rgba(255, 0, 0, 1); }
+        .play-icon { width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid white; margin-left: 5px; }
+
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        /* Checklist con cuadraditos */
+        .checklist { list-style: none !important; padding-left: 0.5rem !important; }
+        .checklist li { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .checklist li::before { content: "☐"; font-size: 1.2rem; font-weight: bold; color: #37352f; flex-shrink: 0; }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        hr { border: 0; border-top: 1px solid #edeceb; margin: 2.5rem 0; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+    </style>
+</head>
+<body>
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 02</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: 26 de marzo de 2026</p>
+        </header>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <h3 class="!mt-0 !mb-2">Clase 2 - Modelos de Inclusión</h3>
+                <p>Hoy ponemos en práctica el <b>Aula Invertida</b>: el material explorado en casa se convierte en acción en el aula. Utilizaremos los modelos <b>TPACK</b> y <b>SAMR</b> como guía para diseñar actividades matemáticas, potenciando la creatividad pedagógica.</p>
+            </div>
+        </div>
+
+        <h3>🎯 Objetivos de la clase</h3>
+        <ul>
+            <li><b>Experimentar</b> el modelo de <b>Aula Invertida</b>, asumiendo un rol activo en la clase presencial.</li>
+            <li><b>Analizar</b> los marcos teóricos <b>TPACK</b> y <b>SAMR</b> para fundamentar la toma de decisiones pedagógicas.</li>
+            <li><b>Explorar</b> herramientas de <b>Inteligencia Artificial Generativa</b> para la creación de consignas de manera crítica.</li>
+            <li><b>Diseñar</b> cuestionario mediante <b>Formularios de Google</b>, integrando el trabajo colaborativo.</li>
+            <li><b>Iniciar</b> la construcción del <b>Portfolio Docente</b> en Google Sites como espacio de metacognición.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Matricularse en el aula virtual de la materia</h2>
+        <p>Ingresar al siguiente link para matricularte en el aula del INFOD:</p>
+        <div class="my-4">
+            <a href="https://isfd50-bue.infd.edu.ar/aula/catalogo.cgi?wAccion=oferta_view&oferta_id=41" target="_blank" class="text-blue-600 underline font-bold text-lg italic">Matricularse aquí</a>
+        </div>
+
+        <p>Aplicaremos el modelo de aprendizaje llamado <b>Aula Invertida</b>.</p>
+        
+        <!-- Video 1: Aula Invertida -->
+        <a href="https://www.youtube.com/watch?v=Bdd_Dr7QUQ4" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/Bdd_Dr7QUQ4/maxresdefault.jpg');">
+            <div class="play-button"><div class="play-icon"></div></div>
+        </a>
+        <p class="text-center">
+            <a href="https://www.youtube.com/watch?v=Bdd_Dr7QUQ4" target="_blank" class="link-full">🔗 Mirar "¿Qué es el Aula Invertida?" en YouTube</a>
+        </p>
+
+        <hr>
+
+        <h2>📝 Actividad</h2>
+        <p>En el <a href="https://docs.google.com/document/d/1B-2qP9EBrjvz0PalA4phMeGNl8o38wfFaeMEZaIkrV0/edit?usp=sharing" target="_blank" class="text-blue-600 underline font-bold italic">documento colaborativo de los grupos</a>, cada grupo tendrá que escribir una pregunta de <i>múltiple choice</i> basada en el marco teórico: <a href="https://docs.google.com/document/d/1RcxmvRYhS2AxX-gBB3mWz4kPB7-cCNyeWX5atvEpdFQ/edit?usp=sharing" class="text-blue-600 underline">Modelo TPACK Modelo SAMR</a>.</p>
+        
+        <p class="mt-4 italic">Luego, cuando estén todas las preguntas, crearemos un <b>formulario de Google</b>.</p>
+
+        <p class="mt-4">Para este y otros trabajos, pueden empezar a probar pedirle ayuda a alguna <b>Inteligencia Artificial (IA)</b>. Algunas que pueden probar:</p>
+        <ul class="grid grid-cols-2 gap-2">
+            <li><a href="https://chat.openai.com/" class="text-blue-600">ChatGPT</a></li>
+            <li><a href="https://gemini.google.com/" class="text-blue-600">Gemini</a></li>
+            <li><a href="https://copilot.microsoft.com/" class="text-blue-600">Copilot</a></li>
+            <li><a href="https://www.perplexity.ai/" class="text-blue-600">Perplexity</a></li>
+            <li><a href="https://aistudio.google.com" class="text-blue-600">Google AI Studio</a></li>
+            <li><a href="https://www.deepseek.com/" class="text-blue-600">DeepSeek</a></li>
+        </ul>
+
+        <hr>
+
+        <h2>Tutoriales sobre cómo crear un formulario de Google:</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=dzsXKwyCNxs" class="text-blue-600 underline">Video Tutorial: Formularios de Google</a></li>
+            <li><a href="https://support.google.com/docs/answer/7032287?hl=es" class="text-blue-600 underline">Ayuda oficial de Google</a></li>
+        </ul>
+
+        <h2>¿Querés empezar a hacer tu portafolio?</h2>
+        <p>Te dejo un video tutorial para que puedas comenzar:</p>
+        
+        <!-- Video 2: Portfolio -->
+        <a href="https://www.youtube.com/watch?v=IpwKVAAFGVY" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/IpwKVAAFGVY/maxresdefault.jpg');">
+            <div class="play-button"><div class="play-icon"></div></div>
+        </a>
+        <p class="text-center">
+            <a href="https://www.youtube.com/watch?v=IpwKVAAFGVY" target="_blank" class="link-full">🔗 Mirar tutorial de Portfolio en Google Sites</a>
+        </p>
+
+        <hr>
+
+        <h2>✅ Checklist de entrega</h2>
+        <div class="aside">
+            <ul class="checklist">
+                <li><b>Matriculación:</b> Estar inscripto correctamente en el aula virtual.</li>
+                <li><b>Documento Colaborativo:</b> Escribir la pregunta de múltiple choice de mi grupo.</li>
+                <li><b>Experimentación IA:</b> Probar un chatbot para refinar la pregunta.</li>
+                <li><b>Formulario de Google:</b> Participar en la creación del formulario conjunto.</li>
+                <li><b>Google Sites:</b> Iniciar la estructura de "árbol" del Portfolio personal.</li>
+            </ul>
+        </div>
+
+        <footer class="mt-20 pt-10 border-t border-gray-200 mb-10">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

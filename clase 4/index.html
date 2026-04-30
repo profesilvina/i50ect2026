@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 04 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Subtítulos Grandes y Negrita con Iconos */
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; display: flex; align-items: center; gap: 0.6rem; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        .video-placeholder {
+            position: relative; width: 100%; padding-top: 56.25%; background-size: cover; background-position: center; border-radius: 12px; cursor: pointer; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 24px 0; display: block; text-decoration: none;
+        }
+        .video-placeholder::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.2); transition: background 0.3s; }
+        .video-placeholder:hover::before { background: rgba(0,0,0,0.4); }
+        .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 0, 0, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+        .video-placeholder:hover .play-button { transform: translate(-50%, -50%) scale(1.1); background: rgba(255, 0, 0, 1); }
+        .play-icon { width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid white; margin-left: 5px; }
+
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: #000;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        .abp-step { color: #d93025; font-weight: 700; }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        hr { border: 0; border-top: 1px solid #edeceb; margin: 2.5rem 0; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+    </style>
+</head>
+<body>
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 04</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: 16 de abril de 2026</p>
+        </header>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <h3 class="!mt-0 !mb-2">ABP y Preguntas para pensar</h3>
+                <p>En esta clase virtual profundizamos en el diseño de situaciones problemáticas y la importancia de formular preguntas que despierten la curiosidad y el pensamiento crítico.</p>
+            </div>
+        </div>
+
+        <h3>🎯 Objetivos de la clase</h3>
+        <ul>
+            <li><b>Reflexionar</b> sobre el valor de las "preguntas para pensar" en el diseño de propuestas de enseñanza.</li>
+            <li><b>Analizar</b> la visualización de datos y resultados de encuestas para la toma de decisiones pedagógicas.</li>
+            <li><b>Avanzar</b> en la metodología de ABP, formulando la pregunta de investigación y organizando ideas.</li>
+            <li><b>Experimentar</b> con IA Generativa para el refinamiento de problemas educativos.</li>
+            <li><b>Implementar</b> el uso de muros colaborativos (Padlet) como bitácora digital del proyecto.</li>
+        </ul>
+
+        <hr>
+
+        <h2>💡 Reflexión Inicial: Preguntas para pensar</h2>
+        <!-- Video Embebido con Miniatura -->
+        <a href="https://www.youtube.com/watch?v=LFB9WJeBCdA" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/LFB9WJeBCdA/maxresdefault.jpg');">
+            <div class="play-button"><div class="play-icon"></div></div>
+        </a>
+        <p class="text-center">
+            <a href="https://www.youtube.com/watch?v=LFB9WJeBCdA" target="_blank" class="link-full">🔗 Mirar "Preguntas para pensar" en YouTube</a>
+        </p>
+
+        <p class="mt-4">Una vez visto, completen sus reflexiones en este <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoczgH7gTfw2WlkRaOwVT8GEw7W6ZmOqWUz4jjKocH2V1wug/viewform" target="_blank" class="text-blue-600 underline">Formulario de Google</a>.</p>
+
+        <hr>
+
+        <h2>🏗️ El recorrido del ABP</h2>
+        <p>Ya transitamos los primeros pasos:</p>
+        <ul class="list-none space-y-2">
+            <li>1. <span class="abp-step">Recuperación de saberes previos (nube de palabras).</span></li>
+            <li>2. <span class="abp-step">Situación problemática (El caso que eligieron).</span></li>
+        </ul>
+
+        <p class="mt-6"><b>Hoy trabajaremos sobre:</b></p>
+        <p class="mt-2"><span class="abp-step">Paso 3: Formular la "pregunta de investigación" o que problematice.</span></p>
+        <ul>
+            <li>Vayan pensando las preguntas que guíen su investigación. ¡Pueden usar la IA para sugerir problemas basados en su situación grupal!</li>
+        </ul>
+
+        <p class="mt-6"><span class="abp-step">Paso 4: Organización de ideas (La Bitácora).</span></p>
+        <p class="mt-4">Toda la investigación y los pasos de su ABP quedarán registrados en una bitácora realizada en un mural de <b>Padlet</b>.</p>
+        
+        <div class="aside">
+            <span>⚠️</span>
+            <div>
+                <p><b>IMPORTANTE!: Un solo integrante del grupo debe crear el mural</b> en <a href="http://padlet.com" target="_blank" class="underline">padlet.com</a> y luego compartirlo al mail del resto de los compañeros.</p>
+            </div>
+        </div>
+
+        <p class="mt-6">Les comparto un video que grabé para que vean cómo empezar a crear la <b>Bitácora ABP en padlet.mp4</b>. Pero como hace unos días la plataforma fue actualizada, debajo les hice otro tutorial con el formato actual:</p>
+
+        <!-- Video de Drive Embebido -->
+        <div class="responsive-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1ywKL5_8fG6aCeIE8sZ2dLuINnElAoVs-/preview" allowfullscreen></iframe>
+        </div>
+        <p class="text-center">
+            <a href="https://drive.google.com/file/d/1ywKL5_8fG6aCeIE8sZ2dLuINnElAoVs-/view" target="_blank" class="link-full">🔗 Ver video en Google Drive</a>
+        </p>
+
+        <h3 class="mt-10">Tutorial actualizado a Padlet 2026:</h3>
+        <div class="responsive-iframe-container" style="padding-top: 65%;">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSrCzc8FfdkGdhGGVnbbVO0xYk3A-1f6j7j_ggE1WdZA7eXyIxWjboet5M_DmmkFTlJf5mDwltiUfhr/embed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+        </div>
+
+        <h3 class="mt-10">Otro tutorial muy completo:</h3>
+        <!-- Tutorial YouTube Padlet -->
+        <a href="https://www.youtube.com/watch?v=AWbPIehrB3g" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/AWbPIehrB3g/maxresdefault.jpg');">
+            <div class="play-button"><div class="play-icon"></div></div>
+        </a>
+        <p class="text-center">
+            <a href="https://www.youtube.com/watch?v=AWbPIehrB3g" target="_blank" class="link-full">🔗 Ver tutorial Padlet en YouTube</a>
+        </p>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>✅ Checklist de tareas</h2>
+        <div class="aside">
+            <ul class="checklist">
+                <li>Ver el video de Melina Furman.</li>
+                <li>Completar el formulario de reflexión sobre el video.</li>
+                <li>Analizar el PDF con los gráficos del formulario TPACK/SAMR.</li>
+                <li>Interactuar con la IA para obtener la "Pregunta que problematiza".</li>
+                <li>Iniciar el mural de Padlet del grupo con la situación problema.</li>
+            </ul>
+        </div>
+
+        <footer class="mt-20 pt-10 border-t border-gray-200 mb-10">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

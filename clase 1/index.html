@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 01 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Estilos de Subtítulos Mejorados */
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        /* Contenedor de Video con Miniatura */
+        .video-placeholder {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-image: url('https://img.youtube.com/vi/MdP9Hyk3vJw/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: 24px 0;
+            display: block;
+            text-decoration: none;
+        }
+        .video-placeholder::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.2);
+            transition: background 0.3s;
+        }
+        .video-placeholder:hover::before {
+            background: rgba(0,0,0,0.4);
+        }
+        .play-button {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px; height: 80px;
+            background: rgba(255, 0, 0, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .video-placeholder:hover .play-button {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: rgba(255, 0, 0, 1);
+        }
+        .play-icon {
+            width: 0; height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid white;
+            margin-left: 5px;
+        }
+
+        /* Otros Estilos */
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+    </style>
+</head>
+<body>
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 01</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: 19 de marzo de 2026</p>
+        </header>
+
+        <div class="aside">
+            <span>👋</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Clase 1 — Presentación</h3>
+                <p>¡Bienvenidas y bienvenidos a Enseñar con Tecnología 2026! En esta primera clase exploraremos nuestra identidad digital y cómo las herramientas interactivas potencian la comunicación pedagógica.</p>
+            </div>
+        </div>
+
+        <h3>🎯 Objetivos de la clase</h3>
+        <div class="aside">
+            <ul>
+                <li>Comprender el encuadre pedagógico de la materia y su modalidad de trabajo (presencial/virtual).</li>
+                <li>Conocer los canales de comunicación (mail: <a href="mailto:profesilvina@gmail.com" class="text-blue-600 underline">profesilvina@gmail.com</a>).</li>
+                <li>Reflexionar sobre la construcción de la identidad digital docente.</li>
+            </ul>
+        </div>
+
+        <h3>🧭 Guía rápida (orden sugerido)</h3>
+        <ul>
+            <li>1) Mirá <b>¿De qué trata la materia?</b> (Genially)</li>
+            <li>2) Revisá <b>Criterios de aprobación y promoción</b> (Prezi)</li>
+            <li>3) Conversamos: <b>Cultura digital, IA y cultura escolar</b> (preguntas guía)</li>
+            <li>4) Tareas y entrega (qué, dónde y para cuándo)</li>
+        </ul>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>¿De qué trata la materia?</h2>
+        <div class="responsive-iframe-container">
+            <iframe src="https://view.genially.com/67e0585a8760193b2b10317e/presentation-ensenar-con-tecnologia" allowfullscreen></iframe>
+        </div>
+        <a href="https://view.genially.com/67e0585a8760193b2b10317e/presentation-ensenar-con-tecnologia" target="_blank" class="link-full">🔗 Abrir presentación en pantalla completa</a>
+
+        <h2>Criterios de aprobación y promoción</h2>
+        <div class="responsive-iframe-container">
+            <iframe src="https://prezi.com/view/2tQw6qhv1gjQudwyiyGP/embed/" allowfullscreen></iframe>
+        </div>
+        <a href="https://prezi.com/view/2tQw6qhv1gjQudwyiyGP/?referral_token=s9r4OUlnB3FN" target="_blank" class="link-full">🔗 Abrir presentación en pantalla completa</a>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>Cultura digital, IA y cultura escolar</h2>
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Antes de ver el video:</h3>
+                <p>"Como docentes, lo peor que podemos hacer es quedarnos quietos..." ¿Te animás a descubrir por qué?</p>
+            </div>
+        </div>
+
+        <!-- Nueva Estrategia: Miniatura con Link a YouTube -->
+        <a href="https://www.youtube.com/watch?v=MdP9Hyk3vJw" target="_blank" class="video-placeholder">
+            <div class="play-button">
+                <div class="play-icon"></div>
+            </div>
+        </a>
+        <p class="text-center mt-2">
+            <a href="https://www.youtube.com/watch?v=MdP9Hyk3vJw" target="_blank" class="link-full">🔗 Mirar "Diálogos para reinventar las aulas con IA" directamente en YouTube</a>
+        </p>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>Para la próxima clase:</h2>
+        <ul>
+            <li><b>Leer el Marco teórico:</b> <a href="https://docs.google.com/document/d/1RcxmvRYhS2AxX-gBB3mWz4kPB7-cCNyeWX5atvEpdFQ/edit?usp=sharing" class="text-blue-600 underline">Modelo TPACK / SAMR</a></li>
+            <li><b>Presentación personal:</b> Crear una imagen interactiva en Genially.</li>
+        </ul>
+
+        <h3>Ejemplo de presentación:</h3>
+        <div class="responsive-iframe-container">
+            <iframe src="https://view.genially.com/60885933cdb4a40cea7c8ca7/interactive-image-presentacion-profe-silvina" allowfullscreen></iframe>
+        </div>
+        <a href="https://view.genially.com/60885933cdb4a40cea7c8ca7/interactive-image-presentacion-profe-silvina" target="_blank" class="link-full">🔗 Abrir en pantalla completa</a>
+
+        <footer class="mt-20 pt-10 border-t border-gray-200 mb-10">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

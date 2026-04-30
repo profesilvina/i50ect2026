@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Subtítulos Grandes y Negrita con Iconos */
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; display: flex; align-items: center; gap: 0.6rem; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        .video-placeholder {
+            position: relative; width: 100%; padding-top: 56.25%; background-size: cover; background-position: center; border-radius: 12px; cursor: pointer; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 24px 0; display: block; text-decoration: none;
+        }
+        .video-placeholder::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.2); transition: background 0.3s; }
+        .video-placeholder:hover::before { background: rgba(0,0,0,0.4); }
+        .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 0, 0, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+        .video-placeholder:hover .play-button { transform: translate(-50%, -50%) scale(1.1); background: rgba(255, 0, 0, 1); }
+        .play-icon { width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid white; margin-left: 5px; }
+
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: #fff;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        hr { border: 0; border-top: 1px solid #edeceb; margin: 2.5rem 0; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+    </style>
+</head>
+<body>
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 03</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: 09 de abril de 2026</p>
+        </header>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <h3 class="!mt-0 !mb-2">Ciudadanía Digital y Aprendizaje Basado en Proyectos</h3>
+                <p>En esta clase abordamos la <b>Ciudadanía Digital</b> como eje transversal y comenzamos a transitar los primeros pasos del <b>ABP</b>. Exploramos cómo las tecnologías pueden potenciar la indagación y la resolución de problemas reales.</p>
+            </div>
+        </div>
+
+        <h3>🎯 Objetivos de la clase</h3>
+        <ul>
+            <li><b>Identificar</b> las dimensiones de la Ciudadanía Digital y su relevancia en la formación docente actual.</li>
+            <li><b>Comprender</b> la metodología de Aprendizaje Basado en Proyectos (ABP) y sus etapas fundamentales.</li>
+            <li><b>Utilizar</b> herramientas digitales para la lluvia de ideas y la visualización de conceptos (Nubes de palabras).</li>
+        </ul>
+
+        <hr>
+
+        <h2>🛡️ Ciudadanía Digital</h2>
+        <p>Reflexionamos sobre nuestra presencia en la red y los derechos/obligaciones que tenemos como ciudadanos digitales.</p>
+
+        <h2>🏗️ Los pasos del ABP</h2>
+        <p>Conozcamos la estructura del Aprendizaje Basado en Proyectos:</p>
+        <div class="responsive-iframe-container">
+            <iframe src="https://view.genially.com/5bf70f9e4e26e101a8f5dc44" allowfullscreen target="_blank"></iframe>
+        </div>
+        <a href="https://view.genially.com/5bf70f9e4e26e101a8f5dc44" target="_blank" class="link-full">🔗 Abrir infografía ABP en pantalla completa</a>
+
+        <hr>
+
+        <h3>🧭 Guía rápida de trabajo</h3>
+        <ul>
+            <li><b>Paso 1:</b> Definición de la problemática de Ciudadanía Digital.</li>
+            <li><b>Paso 2:</b> Investigación y recolección de datos iniciales.</li>
+            <li><b>Paso 3:</b> Creación de una nube de palabras grupal.</li>
+        </ul>
+
+        <h2>☁️ Tutorial Nube de palabras</h2>
+        <p>Aprendé a crear visualizaciones impactantes con este tutorial:</p>
+        <a href="https://www.youtube.com/watch?v=lwwbxbSyTvE" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/lwwbxbSyTvE/maxresdefault.jpg');">
+            <div class="play-button"><div class="play-icon"></div></div>
+        </a>
+        <p class="text-center">
+            <a href="https://www.youtube.com/watch?v=lwwbxbSyTvE" target="_blank" class="link-full">🔗 Ver tutorial "Nube de palabras" en YouTube</a>
+        </p>
+
+        <hr>
+
+        <h3>📚 Bibliografía</h3>
+        <p>Ramírez de Castilla, María del Pilar (2018). “<a href="https://drive.google.com/file/d/1bijmOWm7MahHeseoXQc9LTsBUtMPo8tu/view?usp=sharing" target="_blank" class="text-blue-600 underline font-bold">Aprendizaje Basado en Problemas en el marco del pensamiento computacional</a>”. Curso Pensamiento computacional. Introducción a la programación y robótica. Buenos Aires. Dirección Provincial de innovación y Tecnología Educativa.</p>
+
+        <footer class="mt-20 pt-10 border-t border-gray-200 mb-10">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

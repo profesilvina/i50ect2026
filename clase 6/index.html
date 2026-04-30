@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 06 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); background: #000;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+        
+        .text-red-abp { color: #d93025; font-weight: 600; }
+        .text-red-important { color: #d93025; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 06</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: 07 de mayo de 2026 — Modalidad: Virtual Asincrónica</p>
+        </header>
+
+        <div class="aside">
+            <span>👋</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Clase 6 — Recolección, Análisis y Presentación Final</h3>
+                <p>En esta sexta clase llegamos a la etapa final de nuestro recorrido ABP. Es el momento de transformar los datos recolectados en información valiosa a través del análisis estadístico y de contar nuestra investigación mediante una narrativa digital que integre todo el proceso realizado.</p>
+            </div>
+        </div>
+
+        <h3>🎯 Objetivos de la clase</h3>
+        <div class="aside">
+            <ul>
+                <li>Analizar los resultados de la encuesta mediante parámetros estadísticos (media, mediana y moda).</li>
+                <li>Diseñar y producir la narrativa digital (video) que sintetice el proyecto ABP.</li>
+                <li>Consolidar todas las etapas del recorrido en el mural de Padlet y socializar la producción final.</li>
+            </ul>
+        </div>
+
+        <h3>🧭 Guía rápida (orden sugerido)</h3>
+        <ul>
+            <li>1) Revisión del progreso del ABP y los pasos realizados.</li>
+            <li>2) Repaso del diseño de encuesta y análisis de resultados.</li>
+            <li>3) Visualización del tutorial sobre parámetros estadísticos.</li>
+            <li>4) Producción de la Narrativa Digital (Video).</li>
+            <li>5) Entrega final en Padlet y participación en el foro.</li>
+        </ul>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2 class="text-black border-none">🏗️ El recorrido del ABP</h2>
+        <p class="mb-4">Revisemos los pasos de las actividades que llevamos hechas hasta el momento:</p>
+        <ul class="list-none space-y-2 mt-4 ml-0 pl-0">
+            <li><span class="text-red-abp">1. Aclarar conceptos y términos ✅</span></li>
+            <li><span class="text-red-abp">2. Definir/Formular el problema ✅</span></li>
+            <li><span class="text-red-abp">3. Formular la “pregunta de investigación o que problematice” ✅</span></li>
+            <li><span class="text-red-abp">4. Creamos la bitácora que contendrá todos los pasos del recorrido de nuestro ABP en un mural de Padlet ✅</span></li>
+            <li><span class="text-red-abp">5. Buscar en internet para indagar sobre el tema a investigar y registrar los criterios de selección de un sitio web por sobre otro y los prompt de la IA usada ✅</span></li>
+            <li><span class="text-red-abp">6. Recolección y Análisis de Datos (Encuesta y Parámetros Estadísticos)</span></li>
+        </ul>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>📊 Repasamos lo que se hizo la clase pasada</h2>
+        <ul>
+            <li><strong>Diseño de la Encuesta:</strong> Crearon el formulario de manera anónima (sin pedir Nombre), pero solicitan edad y género para identificar la "población" encuestada y analizar la posible influencia de estas variables en los resultados.</li>
+            <li><strong>Aprobación previa:</strong> Antes de aplicar la encuesta a través de redes sociales (a conocidos o no), deben enviarla a <code class="bg-gray-200 px-1 rounded">profesilvina@gmail.com</code> para que les dé el visto bueno y luego puedan compartirla.</li>
+            <li><strong>Aplicación:</strong> Compartan la encuesta para su respuesta. Se considera un buen número de respuestas más de 20.</li>
+            <li><strong>Análisis Estadístico:</strong> Utilicen la planilla de cálculo generada por el formulario para calcular los parámetros estadísticos: media, mediana y moda. Estos resultados deben proporcionar información relevante sobre el tema de investigación.</li>
+        </ul>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <p>Pueden encontrar ayuda (teoría y ejemplos) en este enlace: <a href="http://recursostic.educacion.es/descartes/web/materiales_didacticos/EDAD_2eso_estadistica/2esoquincena12.pdf" target="_blank" class="text-blue-600 underline font-semibold">Teoría y Ejemplos de Estadística (PDF)</a></p>
+            </div>
+        </div>
+
+        <h3>📽️ Video de Repaso (Drive)</h3>
+        <p>En este video explico como poner las preguntas cuantitativas y luego de tener las respuestas de la encuesta, explico como acceder a la planilla y poner las fórmulas de los parámetros estadísticos:</p>
+        <div class="responsive-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1bxhWo4_HUBW4uzfsD1nSR9OqRntHQv2c/preview" allowfullscreen></iframe>
+        </div>
+        <p class="text-center mt-2">
+            <a href="https://drive.google.com/file/d/1bxhWo4_HUBW4uzfsD1nSR9OqRntHQv2c/view" target="_blank" class="link-full">🔗 Ver link directo al video</a>
+        </p>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2 class="text-red-important">7. Presentación Final: Padlet y Narrativa Digital</h2>
+        <p>Esta etapa consiste en presentar toda la investigación finalizada, incluyendo el análisis de datos y la propuesta de soluciones.</p>
+
+        <h3>📌 Registro en el Padlet (Bitácora)</h3>
+        <p>Deben incluir en el Padlet:</p>
+        <ul>
+            <li>El link del formulario y el link de la planilla de cálculo.</li>
+            <li>Un resumen de los resultados obtenidos de la encuesta, tanto en general como en particular, sobre los parámetros estadísticos. Esto puede hacerse directamente en la narrativa digital.</li>
+            <li>La propuesta de alguna solución del problema inicial planteado.</li>
+            <li><strong>Compartir la planilla:</strong> Compartan el link de la planilla de cálculo en Padlet yendo al botón “compartir” y eligiendo “obtener enlace” para que “Cualquier usuario pueda ver”.</li>
+        </ul>
+
+        <h3>🎬 Narrativa Digital (Video)</h3>
+        <p>Presenten toda la investigación mediante una “sencilla” narración digital en formato de video.</p>
+        <ul>
+            <li><strong>Contenido:</strong> El video debe mostrar el mural digital (Padlet), los resultados de la encuesta y la investigación en general, haciendo un recorrido por el problema y sus soluciones.</li>
+            <li><strong>Participación:</strong> El video debe tener las voces de todos los integrantes del grupo, y cada participación debe ser breve para que no se haga un video muy largo.</li>
+            <li><strong>Herramientas sugeridas:</strong> Para grabar la pantalla del celular pueden usar <strong>XRecorder</strong>; si lo hacen desde la computadora, pueden usar <strong>Screencast-o-matic</strong> o <strong>Loom</strong>.</li>
+            <li><strong>Entrega:</strong> Los videos de cada integrante pueden subirse en forma individual al Padlet (subiendo primero a Google Drive y compartiendo el link en el post), o pueden compilarse en un solo video.</li>
+        </ul>
+
+        <div class="aside border-l-4 border-blue-400">
+            <span>📝</span>
+            <p><strong>Nota:</strong> Con el video acreditarán la asistencia de la clase 6. Recuerden que está abierto el foro de debate <em>Socializando el mural de Ciudadanía digital</em> para compartir el link de su Padlet.</p>
+        </div>
+
+        <p class="italic text-gray-600 my-8">
+            Pedagógicamente, las Narrativas digitales son una herramienta muy potente para evaluar no solo el producto final sino también el proceso, que como sabemos es muy valioso.
+        </p>
+
+        <h3>🌟 Ejemplos de narrativas digitales</h3>
+        <p class="mb-4">Les comparto dos ejemplos de narrativas digitales en las clases de Matemática: Torre de potencias y Adornando la escuela con banderas.</p>
+        <div class="responsive-iframe-container">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT4kZNXjRPdDCDW2rfrcASIs89z7HfPkIw9CkmfnxUOeu8jW91eYtfGryW4kFR6o7fUvx6Xj3grft8L/pubembed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <footer class="mt-10 mb-20">
+            <p class="text-red-important text-xl">
+                1. Aclarar conceptos ✅ <br>
+                2. Definir el problema ✅ <br>
+                3. Pregunta de investigación ✅ <br>
+                4. Bitácora en Padlet ✅ <br>
+                5. Indagar en internet ✅ <br>
+                6. Encuesta y estadística ✅ <br>
+                7. Narración digital (Pendiente)
+            </p>
+            
+            <div class="mt-12 pt-10 border-t border-gray-200">
+                <a href="../index.html" class="back-link">
+                    <span>←</span> Volver a la Hoja de Ruta
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

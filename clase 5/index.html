@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; display: flex; align-items: center; gap: 0.6rem; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        .video-placeholder {
+            position: relative; width: 100%; padding-top: 56.25%; background-size: cover; background-position: center; border-radius: 12px; cursor: pointer; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 24px 0; display: block; text-decoration: none;
+        }
+        .video-placeholder::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.2); transition: background 0.3s; }
+        .video-placeholder:hover::before { background: rgba(0,0,0,0.4); }
+        .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 0, 0, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+        .video-placeholder:hover .play-button { transform: translate(-50%, -50%) scale(1.1); background: rgba(255, 0, 0, 1); }
+        .play-icon { width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid white; margin-left: 5px; }
+
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: #000;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        .abp-step { color: #d93025; font-weight: 700; }
+        .indent-section { padding-left: 2rem; border-left: 2px solid #f1f0ef; margin: 1rem 0; }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        hr { border: 0; border-top: 1px solid #edeceb; margin: 2.5rem 0; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+        
+        .checklist { list-style: none !important; padding-left: 0.5rem !important; }
+        .checklist li { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .checklist li::before { content: "☐"; font-size: 1.2rem; font-weight: bold; color: #37352f; flex-shrink: 0; }
+    </style>
+</head>
+<body>
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 05</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: 23 de abril de 2026</p>
+        </header>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <h3 class="!mt-0 !mb-2">Estrategias de indagación: del buscador tradicional a la IA</h3>
+                <p>En esta clase transformamos el proceso de investigación del ABP, pasando de palabras clave a <b>prompts complejos</b>. El foco está en usar la IA como asistente de investigación sin descuidar la validación en fuentes académicas y oficiales.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>🏗️ El recorrido del ABP</h2>
+        <p>Ya transitamos los primeros pasos:</p>
+        <ul class="list-none space-y-2">
+            <li>1. <span class="abp-step">Recuperación de saberes previos (nube de palabras).</span></li>
+            <li>2. <span class="abp-step">Situación problemática (El caso que eligieron).</span></li>
+            <li>3. <span class="abp-step">Formular la "pregunta de investigación" o que problematice.</span></li>
+            <li>4. <span class="abp-step">Organización de ideas (La Bitácora).</span></li>
+        </ul>
+
+        <p class="mt-8 font-bold">Hoy trabajaremos sobre:</p>
+        <p class="mt-2 text-lg"><span class="abp-step">Paso 5: Buscar, evaluar y registrar información (buscadores con IA y fuentes académicas).</span></p>
+
+        <hr>
+
+        <h2>🤖 Diseño de Prompts para IA</h2>
+        <p>Utilicen la estructura <b>RTFC</b> para obtener resultados de calidad:</p>
+        <ul class="aside block">
+            <li><b>R - ROL:</b> Asignen una personalidad técnica.</li>
+            <li><b>T - TAREA:</b> Definan qué debe hacer exactamente.</li>
+            <li><b>C - CONTEXTO:</b> Expliquen para qué necesitan la información.</li>
+            <li><b>F - FORMATO:</b> Determinen cómo quieren ver los datos.</li>
+        </ul>
+        <p class="mt-4 text-center">
+            <a href="https://www.perplexity.ai/" target="_blank" class="link-full">🔗 Probar Perplexity AI (Buscador confiable)</a>
+        </p>
+
+        <hr>
+
+        <h2>📌 Cómo registrar en el Padlet</h2>
+        <p>Por cada búsqueda que hagan, agreguen una tarjeta correspondiente:</p>
+
+        <div class="indent-section">
+            <h3 class="text-blue-700">Tarjeta: búsqueda con IA</h3>
+            <ul class="mt-2">
+                <li><b>Herramienta usada:</b> ¿Con qué IA buscaron?</li>
+                <li><b>Prompt exacto:</b> Copiá la pregunta tal cual.</li>
+                <li><b>Resumen:</b> Lo más relevante encontrado.</li>
+                <li><b>Verificación:</b> ¿Con qué fuente lo chequearon?</li>
+            </ul>
+        </div>
+
+        <div class="indent-section">
+            <h3 class="text-green-700">Tarjeta: fuente web o académica</h3>
+            <ul class="mt-2">
+                <li><b>URL o título:</b> ¿Qué fuente consultaron?</li>
+                <li><b>Tipo de fuente:</b> Académica, gobierno, ONG, etc.</li>
+                <li><b>Criterios:</b> ¿Pasa los 5 criterios de evaluación?</li>
+                <li><b>Idea principal:</b> ¿Qué aportó a su investigación?</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>📊 Búsqueda de fuentes personales: Encuesta</h2>
+        <p>Para recolectar datos sobre su problema, tendrán que crear una encuesta:</p>
+
+        <!-- Video YouTube Encuesta -->
+        <a href="https://www.youtube.com/watch?v=TUZbPxxFgpY" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/TUZbPxxFgpY/maxresdefault.jpg');">
+            <div class="play-button"><div class="play-icon"></div></div>
+        </a>
+        <p class="text-center">
+            <a href="https://www.youtube.com/watch?v=TUZbPxxFgpY" target="_blank" class="link-full">🔗 Ver tutorial: Cómo crear una encuesta en YouTube</a>
+        </p>
+
+        <h3 class="mt-10">📽️ Tutorial: Parámetros estadísticos</h3>
+        <p>Recomiendo mirar el video tutorial que hice para este tema:</p>
+        
+        <!-- Video Drive Parámetros -->
+        <div class="responsive-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1bxhWo4_HUBW4uzfsD1nSR9OqRntHQv2c/preview" allowfullscreen></iframe>
+        </div>
+        <p class="text-center">
+            <a href="https://drive.google.com/file/d/1bxhWo4_HUBW4uzfsD1nSR9OqRntHQv2c/view" target="_blank" class="link-full">🔗 Ver video en Google Drive: parámetros estadísticos.mp4</a>
+        </p>
+
+        <hr>
+
+        <h2>✅ Checklist de tareas</h2>
+        <div class="aside">
+            <ul class="checklist">
+                <li>Registrar Prompts y resultados en la bitácora.</li>
+                <li>Contrastar la IA con al menos 2 fuentes confiables.</li>
+                <li>Aplicar los 5 criterios de evaluación a las fuentes.</li>
+                <li>Diseñar la encuesta para recabar datos numéricos.</li>
+                <li>Enviar el enlace de la encuesta a la profesora por mail.</li>
+                <li>Mantener el mural de Padlet actualizado.</li>
+            </ul>
+        </div>
+
+        <footer class="mt-20 pt-10 border-t border-gray-200 mb-10">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
