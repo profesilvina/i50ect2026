@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 07 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); background: #f1f0ef;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+        
+        .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.5rem; }
+        .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.25rem; }
+        
+        .topic-card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+        .topic-number { font-weight: 800; color: #9061f9; margin-right: 0.5rem; }
+    </style>
+</head>
+<body>
+    <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 07</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: jueves 14 de mayo de 2026 — Modalidad: Presencial</p>
+            <h2 class="border-none !mt-4">Coevaluación y nuevos desafíos en Tecnología Educativa</h2>
+        </header>
+
+        <div class="aside">
+            <span>🎯</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Tareas de esta clase</h3>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Puesta en común de las narrativas digitales de Ciudadanía Digital.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Explicación del protocolo de la "Escalera de la Retroalimentación".</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Inicio de la coevaluación entre pares de los Murales Digitales en el foro.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Reorganización en 5 nuevos equipos de trabajo y elección de tema.</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>1. Retomando nuestras voces: La Narrativa digital</h2>
+        <p>Para comenzar, retomamos lo trabajado la clase anterior. Como recordarán, la Narrativa digital que presentaron fue la pieza clave para acreditar su asistencia y, sobre todo, para visibilizar el "detrás de escena" de su investigación. Hoy utilizaremos esos insumos para el siguiente paso.</p>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>2. Coevaluación en acción</h2>
+        <p>En esta clase el foco está en la coevaluación (evaluación entre pares). Es el momento de observar el trabajo de otros equipos para aprender de ellos y ofrecer una mirada constructiva.</p>
+        
+        <div class="aside border-l-4 border-blue-400">
+            <span>💬</span>
+            <div>
+                <p><strong>¿Dónde trabajamos?</strong> En el foro "Socializando el Mural de Ciudadanía Digital".</p>
+                <p class="mt-2"><strong>Protocolo:</strong> Utilizaremos la <strong>Escalera de la retroalimentación</strong>. Un grupo observará el trabajo de otro y les hará devoluciones, mirando los criterios que hay en la <a href="https://drive.google.com/file/d/1FIpS8NWgCU3ZpvgUmQ24u3ZqDIIqqtBE/view?usp=sharing" target="_blank" class="text-blue-600 underline font-semibold">rúbrica de evaluación del ABP</a>.</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-8">
+            <h3 class="!mt-0 !mb-4 !text-lg">Asignación de coevaluación:</h3>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 !my-0 list-none !pl-0">
+                <li><span class="font-bold">Grupo 1</span> coevalua al <span class="font-bold">Grupo 2</span></li>
+                <li><span class="font-bold">Grupo 2</span> coevalua al <span class="font-bold">Grupo 3</span></li>
+                <li><span class="font-bold">Grupo 3</span> coevalua al <span class="font-bold">Grupo 4</span></li>
+                <li><span class="font-bold">Grupo 4</span> coevalua al <span class="font-bold">Grupo 5</span></li>
+                <li><span class="font-bold">Grupo 5</span> coevalua al <span class="font-bold">Grupo 6</span></li>
+                <li><span class="font-bold">Grupo 6</span> coevalua al <span class="font-bold">Grupo 7</span></li>
+                <li><span class="font-bold">Grupo 7</span> coevalua al <span class="font-bold">Grupo 1</span></li>
+            </ul>
+        </div>
+
+        <p class="mb-4">Pueden descargar y leer el protocolo aquí:</p>
+        <a href="https://ies7-sfe.infd.edu.ar/aula/archivos/repositorio/0/75/protocolo-escalera-retroalimentacion.ppt.pdf" target="_blank" class="link-full block mb-6">
+            📄 Protocolo de la escalera de la retroalimentación (PDF)
+        </a>
+
+        <div class="responsive-iframe-container">
+            <iframe src="https://view.genial.ly/5e766d8601bd350de7a77527" allowfullscreen></iframe>
+        </div>
+        <p class="text-center mt-2">
+            <a href="https://view.genial.ly/5e766d8601bd350de7a77527" target="_blank" class="link-full">🔗 Ver link directo al Genially</a>
+        </p>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>📋 Checklist: ¿Qué debe tener el Mural digital?</h2>
+        <p class="mb-6">Antes de dar por finalizado su mural o de evaluar el de un compañero, verifiquen que contenga los siguientes elementos esenciales:</p>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div class="checklist-item">
+                <div class="checkbox"></div>
+                <span><strong>Situación Problema:</strong> Definición clara del conflicto o tema inicial.</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox"></div>
+                <span><strong>Nube de Ideas:</strong> Visualización de los conceptos claves asociados.</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox"></div>
+                <span><strong>Pregunta de Investigación:</strong> El interrogante que guio todo el proceso.</span>
+            </div>
+            <div class="checklist-item">
+                <div class="ml-6 mt-2 mb-4">
+                    <p class="font-bold mb-2">Recolección de datos propios:</p>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span>Enlace a la encuesta realizada.</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span>Enlace a la planilla de cálculo con los resultados donde se vea como se calcularon las funciones (Promedio, mediana y moda).</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span><strong>Análisis de resultados y Parámetros estadísticos:</strong> ¿Qué informan estos datos sobre nuestra muestra?</span>
+                    </div>
+                </div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox"></div>
+                <span><strong>Uso de Inteligencia Artificial:</strong> Detalle del Prompt utilizado y qué IA se consultó (Anexo de IA).</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox"></div>
+                <span><strong>Fuentes Bibliográficas:</strong> Citas académicas y sitios confiables que aportaron a la investigación.</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox"></div>
+                <span><strong>Narrativa Digital:</strong> Un recurso (video, podcast, presentación interactiva) donde se escuchen las voces de todos los integrantes reflexionando sobre el proceso.</span>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>🚀 Inicio de la actividad: “Investigación sobre Tecnología Educativa”</h2>
+        <p>En esta etapa, profundizaremos en distintos temas de la Tecnología Educativa.</p>
+
+        <h3>1. Conformación de grupos y selección de temas</h3>
+        <p>Es momento de reorganizarse. Deben formar <strong>5 grupos en total</strong>, registrándose en este documento:</p>
+        <a href="https://docs.google.com/document/d/1B-2qP9EBrjvz0PalA4phMeGNl8o38wfFaeMEZaIkrV0/edit?tab=t.0" target="_blank" class="link-full block mb-6">
+            📝 Documento de conformación de grupos
+        </a>
+
+        <p class="mb-4">Cada grupo tendrá uno de los siguientes temas para investigar:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="topic-card flex items-center"><span class="topic-number">1.</span> GAMIFICACIÓN</div>
+            <div class="topic-card flex items-center"><span class="topic-number">2.</span> SOFTWARE MATEMÁTICO</div>
+            <div class="topic-card flex items-center"><span class="topic-number">3.</span> PROGRAMACIÓN</div>
+            <div class="topic-card flex items-center"><span class="topic-number">4.</span> ROBÓTICA</div>
+            <div class="topic-card flex items-center"><span class="topic-number">5.</span> TECNOLOGÍAS DE INMERSIÓN</div>
+        </div>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <p><strong>Recurso de apoyo:</strong> Para conocer de qué tratan y ver sitios sugeridos, consulten el archivo:</p>
+                <a href="https://docs.google.com/document/d/1mxTE1wWACghPy3MZNqJHPUsz-JAhra17xNWG3ske_VQ/edit?usp=sharing" target="_blank" class="text-blue-600 underline font-semibold">
+                    Material para investigar sobre EcT
+                </a>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h3>¿En qué consiste esta segunda etapa?</h3>
+        <p>Durante lo que resta de la materia, cada equipo deberá cumplir con el siguiente trabajo:</p>
+        <ul>
+            <li>Investigar el tema asignado.</li>
+            <li>Diseñar una presentación digital.</li>
+            <li>Exponer el tema frente al resto de la clase, (como narrativa digital).</li>
+            <li>Diseñar y proponer una actividad práctica para sus compañeros.</li>
+            <li>Corregir dicha actividad utilizando una rúbrica.</li>
+        </ul>
+
+        <div class="aside border-l-4 border-orange-400 mt-8">
+            <span>📌</span>
+            <p><strong>Importante:</strong> La información sobre esta segunda etapa es para que ya conozcan los nuevos desafíos y temas. Por el momento, el foco principal del trabajo debe estar en <strong>finalizar y pulir el proyecto de Ciudadanía Digital</strong> y completar la coevaluación.</p>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <footer class="mt-10 mb-20">
+            <div class="pt-10 border-t border-gray-200">
+                <a href="../index.html" class="back-link">
+                    <span>←</span> Volver a la Hoja de Ruta
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
