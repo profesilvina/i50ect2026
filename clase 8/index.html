@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 08 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        h4 { line-height: 1.3; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        
+        .responsive-iframe-container {
+            position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); background: #f1f0ef;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+        }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+    </style>
+</head>
+<body>
+    <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 08</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: jueves 21 de mayo de 2026 — Modalidad: Virtual Asincrónica</p>
+            <h2 class="border-none !mt-4">Investigación y Diseño en Tecnología Educativa</h2>
+        </header>
+
+        <div class="aside">
+            <span>✅</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Acreditación de asistencia</h3>
+                <p>La asistencia de esta clase se acredita mediante la realización del <strong>Quizizz de ABP</strong>. Asegúrense de completarlo de forma individual y de ingresar con <strong>nombre y apellido</strong>.</p>
+                <a href="https://wayground.com/join?gc=04069489" target="_blank" class="text-blue-600 underline font-semibold">
+                    Ingresar al Quizizz de ABP
+                </a>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>🚀 Tarea grupal: Investigación y primer borrador</h2>
+        <p>En esta etapa, cada equipo profundizará en el tema de Tecnología Educativa asignado la clase anterior.</p>
+
+        <div class="aside border-l-4 border-blue-500">
+            <span>📝</span>
+            <div>
+                <p><strong>Así quedaron formados los 5 grupos en este documento:</strong></p>
+                <a href="https://docs.google.com/document/d/1B-2qP9EBrjvz0PalA4phMeGNl8o38wfFaeMEZaIkrV0/edit?tab=t.0" target="_blank" class="text-blue-600 underline font-semibold">
+                    Documento de conformación de grupos
+                </a>
+                <p class="mt-4"><strong>Cada grupo tendrá uno de los siguientes temas para investigar:</strong></p>
+                <ol class="list-decimal pl-6 mt-3">
+                    <li><strong>Gamificación</strong> - Grupo 3</li>
+                    <li><strong>Software matemático</strong> - Grupo 1</li>
+                    <li><strong>Programación</strong> - Grupo 2</li>
+                    <li><strong>Robótica</strong> - Grupo 5</li>
+                    <li><strong>Tecnologías de inmersión</strong> - Grupo 4</li>
+                </ol>
+            </div>
+        </div>
+
+        <h3>Conceptos para orientar la investigación</h3>
+        <p>Cada equipo deberá organizar la búsqueda a partir del tema asignado. La idea no es reunir información suelta, sino comprender los conceptos centrales, seleccionar ejemplos potentes para Matemática y pensar cómo podrían llevarse al aula.</p>
+
+        <div class="grid grid-cols-1 gap-5 mt-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-purple-700 mb-3">1. Gamificación, ABJ y evaluación activa</h4>
+                <ul class="!my-0">
+                    <li>Diferenciar <strong>gamificación</strong> y <strong>Aprendizaje Basado en Juegos</strong>: elementos de juego, juegos serios y videojuegos con potencial educativo.</li>
+                    <li>Explorar plataformas de evaluación activa como Kahoot!, Quizizz, Flippity, Genially, escape rooms digitales y juegos creados para el aula.</li>
+                    <li>Buscar ejemplos aplicados a Matemática: juegos para practicar contenidos, resolver problemas, colaborar o tomar decisiones.</li>
+                    <li>Investigar cómo la IA podría personalizar niveles de dificultad, ofrecer pistas y generar retroalimentación inmediata.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-blue-700 mb-3">2. Software matemático</h4>
+                <ul class="!my-0">
+                    <li>Reconocer distintos tipos de software para enseñar y aprender Matemática: geometría dinámica, planillas de cálculo, simuladores, calculadoras simbólicas y apps.</li>
+                    <li>Profundizar en herramientas como GeoGebra, Desmos, planillas de cálculo, PhET, Mathigon, Wolfram Alpha, Graspable Math, Photomath o MathPapa.</li>
+                    <li>Seleccionar ejemplos concretos para contenidos matemáticos: funciones, geometría, estadística, álgebra, proporcionalidad, probabilidad u otros.</li>
+                    <li>Debatir el lugar de la IA y de las apps que resuelven ejercicios: cómo usarlas sin reemplazar el razonamiento matemático.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-emerald-700 mb-3">3. Programación y pensamiento computacional</h4>
+                <ul class="!my-0">
+                    <li>Responder para qué sirve programar y qué relación tiene la programación con la Matemática.</li>
+                    <li>Explorar Scratch y Pilas Bloques como entornos iniciales para crear animaciones, simulaciones, juegos o problemas matemáticos.</li>
+                    <li>Indagar en App Inventor y otras herramientas para crear aplicaciones simples vinculadas con contenidos escolares.</li>
+                    <li>Considerar lenguajes como Python para resolver problemas, representar datos, automatizar cálculos o modelizar situaciones.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-orange-700 mb-3">4. Robótica educativa</h4>
+                <ul class="!my-0">
+                    <li>Investigar cómo la robótica puede favorecer el aprendizaje mediante exploración, ensayo y error, colaboración y resolución de problemas.</li>
+                    <li>Relacionar robótica y Matemática: medidas, ángulos, proporcionalidad, coordenadas, geometría, funciones, estimación y modelización.</li>
+                    <li>Explorar recursos como Tbot, Arduino, kits escolares de robótica, Tinkercad y simuladores de electrónica.</li>
+                    <li>Investigar posibles aportes de la IA: robots que reconocen patrones, toman decisiones, adaptan recorridos o responden al entorno.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-pink-700 mb-3">5. Tecnologías de inmersión: RA, RV y códigos QR</h4>
+                <ul class="!my-0">
+                    <li>Diferenciar <strong>Realidad Aumentada</strong>, <strong>Realidad Virtual</strong> y experiencias mediadas por códigos QR.</li>
+                    <li>Investigar cómo estas tecnologías permiten visualizar, manipular o recorrer objetos y espacios matemáticos.</li>
+                    <li>Buscar ejemplos para Matemática: cuerpos geométricos en 3D, recorridos, yincanas, simulaciones, exploración espacial y GeoGebra 3D con RA.</li>
+                    <li>Explorar cómo la IA podría enriquecer estas experiencias mediante reconocimiento de imágenes, generación de objetos, guías interactivas o retroalimentación personalizada.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aside">
+            <span>💡</span>
+            <div>
+                <p><strong>Recurso de apoyo:</strong> Para conocer de qué tratan y ver sitios sugeridos, consulten el archivo:</p>
+                <a href="https://docs.google.com/document/d/1mxTE1wWACghPy3MZNqJHPUsz-JAhra17xNWG3ske_VQ/edit?usp=sharing" target="_blank" class="text-blue-600 underline font-semibold">
+                    Material para investigar sobre EcT
+                </a>
+            </div>
+        </div>
+
+        <h3>¿En qué consiste el trabajo de esta etapa?</h3>
+        <ul>
+            <li><strong>Investigar:</strong> Indagar a fondo el tema asignado utilizando los recursos sugeridos y búsquedas propias en sitios confiables.</li>
+            <li><strong>Diseñar la presentación:</strong> Crear el primer borrador de una presentación digital que sea visual, clara y estructurada.</li>
+        </ul>
+
+        <h3>Requisitos mínimos de la presentación:</h3>
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-4">
+            <ul class="!my-0">
+                <li>Definiciones claras de los conceptos.</li>
+                <li>Ejemplos aplicados a la Matemática.</li>
+                <li>Links a tutoriales útiles.</li>
+                <li>Bibliografía y Webgrafía (links a los sitios consultados).</li>
+            </ul>
+        </div>
+
+        <p class="mt-8"><strong>Herramientas sugeridas:</strong> Google Slides (ideal para trabajo colaborativo), Genially, Canva, Emaze, Prezi, alguna IA que cree presentaciones que luego puedan ser editadas y completadas, u otra herramienta que les guste.</p>
+
+        <div class="aside border-l-4 border-amber-500 mt-8">
+            <span>📌</span>
+            <div>
+                <p><strong>Recuerden:</strong> una buena presentación digital debe tener poco texto en cada página, imágenes que clarifiquen los conceptos y videotutoriales que puedan verse desde la misma presentación, sin obligar a salir de ella para verlos.</p>
+            </div>
+        </div>
+
+        <div class="aside border-l-4 border-purple-500 mt-8">
+            <span>📧</span>
+            <p>El link de la presentación debe ser enviado antes de la próxima clase, por mail a <strong>profesilvina@gmail.com</strong> para recibir la devolución y guía en el proceso.</p>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <footer class="mt-10 mb-20">
+            <div class="pt-10 border-t border-gray-200">
+                <a href="../index.html" class="back-link">
+                    <span>←</span> Volver a la Hoja de Ruta
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
