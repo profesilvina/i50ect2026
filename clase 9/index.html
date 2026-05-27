@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 09 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        h4 { line-height: 1.3; }
+        .tag { font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container ol { list-style-type: decimal; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+
+        .link-full { color: #2383e2; font-size: 1rem; font-weight: 600; text-decoration: none; }
+        .link-full:hover { text-decoration: underline; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+
+        .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.65rem; }
+        .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.25rem; background: white; }
+        .rubric-table th { background: #f3f4f6; text-align: left; }
+        .rubric-table th, .rubric-table td { border: 1px solid #e5e7eb; padding: 0.85rem; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 09</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: jueves 28 de mayo de 2026 — Modalidad: Presencial</p>
+            <h2 class="border-none !mt-4">Cierre de ABP e inicio del proyecto de investigación con Aula Invertida</h2>
+        </header>
+
+        <div class="aside">
+            <span>🎯</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Tareas de esta clase</h3>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Puesta en común del Quiz de ABP.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Charla de cierre del recorrido de Aprendizaje Basado en Problemas.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Presentación del proyecto de investigación sobre Tecnología Educativa con modelo de Aula Invertida.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Lectura guiada de la guía de trabajo para cada grupo.</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>1. Puesta en común del Quiz de ABP</h2>
+        <p>Comenzaremos la clase recuperando lo trabajado en el Quiz de ABP. La idea es revisar las respuestas, conversar sobre las dudas que aparecieron y volver sobre los conceptos centrales del Aprendizaje Basado en Problemas.</p>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm mt-6">
+            <h3 class="!mt-0 !mb-4 !text-lg">Preguntas para conversar</h3>
+            <ul class="!my-0">
+                <li>¿Qué ideas del ABP quedaron más claras después del quiz?</li>
+                <li>¿Qué preguntas generaron más dudas o debate?</li>
+                <li>¿Qué relación encuentran entre el ABP y el proyecto de Ciudadanía Digital que desarrollaron?</li>
+                <li>¿Qué aprendizajes del proceso podrían llevar a sus futuras clases de Matemática?</li>
+            </ul>
+        </div>
+
+        <div class="aside border-l-4 border-blue-500 mt-8">
+            <span>💬</span>
+            <div>
+                <p><strong>Propósito:</strong> no se trata solamente de corregir respuestas, sino de usar el quiz como punto de partida para ordenar ideas, revisar el recorrido y poner en palabras qué aprendimos sobre el trabajo por proyectos y problemas.</p>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>2. Charla sobre el cierre del ABP</h2>
+        <p>Después de la puesta en común, realizaremos una charla de cierre del recorrido ABP. Vamos a mirar el proceso completo: desde la situación problema inicial hasta la construcción del mural, la búsqueda de información, la encuesta, el análisis de datos, la narrativa digital y la coevaluación.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-purple-700 mb-3">Lo que revisamos</h4>
+                <ul class="!my-0">
+                    <li>El problema inicial y la pregunta de investigación.</li>
+                    <li>El mural digital como bitácora del proceso.</li>
+                    <li>La búsqueda de información y el uso responsable de IA.</li>
+                    <li>La encuesta, los datos y los parámetros estadísticos.</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-emerald-700 mb-3">Lo que cerramos</h4>
+                <ul class="!my-0">
+                    <li>Qué aprendimos del trabajo colaborativo.</li>
+                    <li>Qué aportó la narrativa digital para contar el proceso.</li>
+                    <li>Qué valor tuvo la coevaluación entre pares.</li>
+                    <li>Cómo se puede adaptar esta metodología a la enseñanza de la Matemática.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aside border-l-4 border-amber-500 mt-8">
+            <span>📌</span>
+            <p><strong>Importante:</strong> este momento funciona como cierre del primer tramo de la materia. La intención es reconocer lo realizado, identificar aprendizajes y dejar planteado cómo ese recorrido puede convertirse en una estrategia de enseñanza.</p>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>3. Proyecto de investigación con Aula Invertida</h2>
+        <p>Luego del cierre del ABP, iniciaremos el proyecto de investigación sobre Tecnología Educativa. Cada grupo investigará un tema y diseñará una propuesta de enseñanza para Matemática usando el modelo pedagógico de <strong>Aula Invertida</strong> o <strong>Flipped Classroom</strong>.</p>
+
+        <p>En este enfoque, el primer contacto con los contenidos se realiza antes de la clase presencial mediante materiales digitales preparados por el grupo: videos, audios, presentaciones, enlaces, formularios u otros recursos. El encuentro presencial se reserva para aplicar, debatir, resolver problemas, crear producciones, recibir acompañamiento docente y construir aprendizajes más profundos.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-blue-700 mb-3">Qué es Aula Invertida</h4>
+                <ul class="!my-0">
+                    <li>Un modo de aumentar la interacción y el acompañamiento personalizado entre docente y estudiantes.</li>
+                    <li>Una propuesta en la que los estudiantes asumen un rol activo y responsable sobre su aprendizaje.</li>
+                    <li>Una combinación de enseñanza directa previa y aprendizaje constructivista durante la clase.</li>
+                    <li>Un modelo que permite revisar contenidos, recuperar clases y avanzar con materiales disponibles en línea.</li>
+                    <li>Una oportunidad para ofrecer experiencias de aprendizaje más personalizadas y participativas.</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+                <h4 class="text-xl font-bold text-rose-700 mb-3">Qué no es Aula Invertida</h4>
+                <ul class="!my-0">
+                    <li>No es simplemente mirar videos online.</li>
+                    <li>No reemplaza al docente por recursos digitales.</li>
+                    <li>No es un curso virtual ni una propuesta sin estructura.</li>
+                    <li>No implica que los estudiantes trabajen solos o todo el tiempo frente a una pantalla.</li>
+                    <li>No elimina la clase presencial: la vuelve más activa, colaborativa y significativa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aside border-l-4 border-emerald-500 mt-8">
+            <span>💡</span>
+            <div>
+                <p><strong>Idea central:</strong> lo más importante del Aula Invertida no es el recurso digital en sí, sino lo que permite hacer en el encuentro cara a cara: acompañar, discutir, resolver, crear y aplicar los contenidos de manera significativa.</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-6">
+            <h3 class="!mt-0 !mb-4 !text-lg">Referencias sobre Aula Invertida</h3>
+            <ul class="!my-0">
+                <li>
+                    <a href="https://sites.google.com/view/flippedconectadosalasmates/" target="_blank" class="text-blue-600 underline font-semibold">
+                        Ejemplo de sitio de Matemática con metodología de Aula Invertida
+                    </a>
+                </li>
+                <li>
+                    <a href="https://undef.edu.ar/wp-content/uploads/2025/10/Clase-invertida.pdf" target="_blank" class="text-blue-600 underline font-semibold">
+                        Bibliografía: Clase invertida
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>4. Guía de trabajo de cada grupo</h2>
+        <p>La guía de trabajo organiza el proyecto completo. En ella se detallan las actividades que deberá realizar cada grupo durante la investigación y el diseño de la propuesta.</p>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6 mt-6">
+            <h3 class="!mt-0 !mb-4 !text-lg text-blue-900">Actividades que debe realizar cada grupo</h3>
+            <ul class="!my-0">
+                <li>Investigar un tema de Tecnología Educativa vinculado con la enseñanza de la Matemática.</li>
+                <li>Preparar una presentación digital base con definiciones, ejemplos matemáticos, recursos y bibliografía.</li>
+                <li>Producir materiales multimedia para el trabajo previo: video, audios, presentación con enlaces u otros recursos digitales.</li>
+                <li>Crear un Formulario de Google con preguntas de verificación para comprobar la comprensión del material previo.</li>
+                <li>Diseñar una actividad presencial significativa, centrada en aplicar, resolver, analizar o crear.</li>
+                <li>Implementar la propuesta con sus compañeros, asumiendo temporalmente el rol docente.</li>
+                <li>Elaborar una rúbrica de evaluación con criterios claros y niveles de logro.</li>
+                <li>Realizar devoluciones formativas a otros grupos, señalando fortalezas, aspectos a revisar y sugerencias de mejora.</li>
+            </ul>
+        </div>
+
+        <p>También propone una instancia de implementación en la que el grupo asume temporalmente el rol docente: coordina la actividad, acompaña a sus compañeros, resuelve dudas y luego realiza devoluciones formativas. La guía incorpora además recomendaciones para usar Inteligencia Artificial de manera crítica y responsable, cuidar la accesibilidad digital y revisar que los recursos sean claros, navegables y útiles para aprender.</p>
+
+        <div class="aside border-l-4 border-blue-500 mt-8">
+            <span>📘</span>
+            <div>
+                <p><strong>Para leer en profundidad:</strong> la guía completa desarrolla el paso a paso del proyecto, los productos esperados y las orientaciones técnicas para crear videos, audios, formularios, actividades y rúbricas.</p>
+                <a href="https://docs.google.com/document/d/1vrn3gMV7padOyZR9OfpA6L9Olf-oSJe7HrP4mANgIGw/edit?usp=sharing" target="_blank" class="text-blue-600 underline font-semibold">
+                    Guía de trabajo de cada grupo con el tema de Tecnología Educativa
+                </a>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>5. Presentación del tema de investigación</h2>
+        <p>Cada grupo presentará el tema de Tecnología Educativa que investigó. La exposición debe ayudar al resto de la clase a comprender de qué trata el tema, qué herramientas o recursos existen y qué posibilidades ofrece para enseñar Matemática desde una propuesta de Aula Invertida.</p>
+
+        <h3>La presentación debe incluir</h3>
+        <ol>
+            <li><strong>Definición del tema:</strong> explicación clara de los conceptos principales.</li>
+            <li><strong>Herramientas o recursos:</strong> plataformas, aplicaciones, sitios o ejemplos encontrados.</li>
+            <li><strong>Relación con Matemática:</strong> contenidos o situaciones en los que podría utilizarse.</li>
+            <li><strong>Ejemplos concretos:</strong> una actividad, experiencia, recurso o caso posible para el aula.</li>
+            <li><strong>Bibliografía y webgrafía:</strong> links a los sitios, tutoriales o materiales consultados.</li>
+        </ol>
+
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-6">
+            <h3 class="!mt-0 !mb-4 !text-lg">Temas de investigación</h3>
+            <ul class="!my-0">
+                <li>Gamificación, ABJ y evaluación activa.</li>
+                <li>Software matemático.</li>
+                <li>Programación y pensamiento computacional.</li>
+                <li>Robótica educativa.</li>
+                <li>Tecnologías de inmersión: realidad aumentada, realidad virtual y códigos QR.</li>
+            </ul>
+        </div>
+
+        <div class="aside border-l-4 border-blue-500 mt-8">
+            <span>📝</span>
+            <div>
+                <p><strong>Documentos de trabajo:</strong></p>
+                <a href="https://docs.google.com/document/d/1B-2qP9EBrjvz0PalA4phMeGNl8o38wfFaeMEZaIkrV0/edit?tab=t.0" target="_blank" class="text-blue-600 underline font-semibold block mb-2">
+                    Documento de conformación de grupos
+                </a>
+                <a href="https://docs.google.com/document/d/1mxTE1wWACghPy3MZNqJHPUsz-JAhra17xNWG3ske_VQ/edit?usp=sharing" target="_blank" class="text-blue-600 underline font-semibold">
+                    Material para investigar sobre EcT
+                </a>
+            </div>
+        </div>
+
+        <div class="aside border-l-4 border-purple-500 mt-8">
+            <span>📧</span>
+            <p>Al finalizar la clase, cada grupo deberá dejar compartido el enlace de su presentación sobre el tema investigado con <strong>profesilvina@gmail.com</strong>.</p>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <footer class="mt-10 mb-20">
+            <div class="pt-10 border-t border-gray-200">
+                <a href="../index.html" class="back-link">
+                    <span>←</span> Volver a la Hoja de Ruta
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
