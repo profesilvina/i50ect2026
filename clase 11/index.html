@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+        h4 { line-height: 1.3; }
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .notion-container ul { list-style-type: disc; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container ol { list-style-type: decimal; padding-left: 2.5rem; margin: 1.25rem 0; }
+        .notion-container li { margin-bottom: 0.75rem; }
+        .responsive-iframe-container { position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); background: #f1f0ef; }
+        .responsive-iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+        .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.65rem; }
+        .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.2rem; background: white; }
+        .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+        .resource-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
+
+        <header class="mb-14">
+            <h1>Clase 11</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: jueves 11 de junio de 2026 — Modalidad: Presencial</p>
+            <h2 class="border-none !mt-4">Tecnologías inmersivas: actividades con RA y RV</h2>
+        </header>
+
+        <div class="aside border-l-4 border-purple-500">
+            <span>🕶️</span>
+            <div>
+                <h3 class="!mt-0 !mb-3 !text-xl">Tareas de esta clase</h3>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Ver y escuchar el video del grupo.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Responder las preguntas del formulario.</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>1. Actividad del grupo</h2>
+        <div class="bg-violet-50 border-l-4 border-violet-500 rounded-lg p-6 my-6">
+            <p class="text-lg text-violet-950">El grupo que investigó <strong>Tecnologías inmersivas</strong> tiene para mostrarnos y proponernos una actividad.</p>
+        </div>
+
+        <div class="bg-white border border-violet-200 rounded-lg p-6 my-6">
+            <p class="text-lg font-semibold text-violet-900">Actividad del grupo</p>
+            <div class="mt-4 space-y-6">
+                <div>
+                    <h3 class="!mt-0 !mb-3 text-xl text-violet-900">A) GeoGebra 3D Realidad Aumentada</h3>
+                    <p>Esta actividad propone construir y observar un cubo en GeoGebra 3D para luego visualizarlo en realidad aumentada.</p>
+                    <ol class="list-decimal pl-6 mt-3 space-y-2">
+                        <li>Instalar la calculadora 3D de GeoGebra y abrir la vista gráfica.</li>
+                        <li>Seleccionar la herramienta para dibujar un cubo.</li>
+                        <li>Marcar dos puntos en el plano: uno en el origen y otro sobre el eje x para que aparezca el cubo.</li>
+                        <li>Elegir la opción de desarrollador y hacer clic sobre el cubo para observar su desarrollo plano.</li>
+                        <li>Volver a la herramienta de flecha y hacer clic sobre la figura plana para cerrar la superficie.</li>
+                        <li>Usar la opción para rotar la vista 3D y analizar la figura desde distintos ángulos.</li>
+                        <li>Para verla en realidad aumentada, activar la opción RA, apuntar la cámara a una superficie plana, esperar a que la app detecte el espacio y ubicar el cubo en la pantalla. Luego se puede mover, girar o agrandar con gestos.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3 class="!mt-0 !mb-3 text-xl text-violet-900">B) Escape Room con QR: “Misión IA 2050”</h3>
+                    <p>Esta propuesta consiste en un juego de resolución de problemas en equipos. La consigna general es recuperar la información bloqueada por la inteligencia artificial NOVA.</p>
+                    <ul class="list-disc pl-6 mt-3 space-y-2">
+                        <li><strong>Duración:</strong> entre 20 y 30 minutos.</li>
+                        <li><strong>Equipos:</strong> de 3 a 5 integrantes.</li>
+                        <li><strong>Materiales:</strong> celulares con lector de QR, 5 códigos QR impresos y una hoja de respuestas.</li>
+                    </ul>
+                    <p class="mt-3"><strong>Desafíos del escape room:</strong></p>
+                    <ol class="list-decimal pl-6 mt-2 space-y-2">
+                        <li><strong>Mensaje secreto:</strong> identificar qué tecnología permite interactuar con elementos virtuales sobre el mundo real. Respuesta correcta: <strong>Realidad Aumentada</strong>.</li>
+                        <li><strong>Adivina la tecnología:</strong> reconocer qué tecnología se utiliza con gafas especiales para trasladar al alumno a un entorno completamente digital. Respuesta correcta: <strong>Realidad Virtual</strong>.</li>
+                        <li><strong>Desafío de IA:</strong> reconocer una acción propia de la inteligencia artificial, como aprender patrones de datos. Respuesta correcta: <strong>Aprender patrones de datos</strong>.</li>
+                        <li><strong>Descifra el código:</strong> ordenar las tecnologías de la más antigua a la más reciente. Respuesta correcta: <strong>Internet → Realidad Virtual → Inteligencia Artificial Generativa</strong>.</li>
+                        <li><strong>Desafío final:</strong> decidir qué acción no puede realizar la IA por sí sola. Respuesta correcta: <strong>Tomar decisiones éticas perfectas</strong>.</li>
+                    </ol>
+                    <p class="mt-3"><strong>Código final:</strong> 72509.</p>
+                    <p>Al finalizar, el grupo obtiene el mensaje de “Misión cumplida” y refuerza conceptos sobre inteligencia artificial, realidad aumentada, realidad virtual y uso responsable de las tecnologías emergentes.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>2. Ejemplos propuestos por la profesora</h2>
+
+        <h3>GeoGebra 3D y Realidad Aumentada</h3>
+        <p><strong>GeoGebra 3D y Realidad Aumentada: Ideas para explorar.</strong></p>
+        <p><strong>Autores:</strong> Laura del Río y Tim Brzezinski.</p>
+        <p>Este libro contiene una introducción a la Realidad Aumentada de GeoGebra, ideas para el aula y varios medios a través de los cuales los docentes de matemática pueden utilizar esta característica para crear entornos de aprendizaje dinámicos, exploratorios y centrados en el estudiante. Este tutorial continuará creciendo a lo largo del tiempo.</p>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 mt-6 shadow-sm">
+            <h4 class="text-xl font-bold text-purple-700 mb-3">Recursos de GeoGebra RA</h4>
+            <ul class="!my-0">
+                <li><a href="https://www.geogebra.org/m/myquzswq" target="_blank" class="resource-link">GeoGebra 3D y Realidad Aumentada: Ideas para explorar</a></li>
+                <li><a href="https://www.geogebra.org/m/myquzswq#material/jbmkgspy" target="_blank" class="resource-link">Ejemplos de Realidad Aumentada con GeoGebra RA</a></li>
+            </ul>
+            <img src="https://www.geogebra.org/resource/ze7pdqcw/hJeQO31XmD6Vc4Io/material-ze7pdqcw-thumb@l.png" alt="GeoGebra RA" class="mt-4 rounded-lg border border-gray-200" style="max-width: 280px; width: 100%;">
+        </div>
+
+        <h3 class="mt-8">Presentación: enseñar y aprender con RA</h3>
+        <div class="bg-emerald-50 border-l-4 border-emerald-500 rounded-lg p-6 my-6">
+            <p class="text-lg font-semibold mt-2">Enseñar y aprender con códigos QR y hologramas.</p>
+            <p class="mt-4"><a href="https://docs.google.com/presentation/d/1ulQzBHDowgmr1PpW3O88Ncklp-D0zNAQ7ezLBDfj4LA/edit?slide=id.p#slide=id.p" target="_blank" class="resource-link">Ver presentación completa →</a></p>
+            <div class="responsive-iframe-container mt-4">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTAXp-W8zNOHX2qykjIuUGqHfSKAlV67nwIBH8Z3zSXkycjYyojjm4qHAoRUx8fP9VlgRRHHB62ZMWj/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <h2>3. Otros recursos para explorar</h2>
+
+        <h3>Tecnologiar</h3>
+        <p>Publicaciones sobre Realidad Aumentada y Realidad Virtual.</p>
+        <p><a href="https://www.tecnologiar.com/publicaciones/categories/rayrv" target="_blank" class="resource-link">Tecnologiar - RA y RV</a></p>
+
+        <div class="aside border-l-4 border-amber-500 mt-8">
+            <span>📐</span>
+            <div>
+                <p><strong>Aplicación de Realidad Aumentada: cuerpos geométricos</strong></p>
+                <p><strong>Aplicación de Realidad Aumentada Cuerpos Geométricos:</strong> <a href="https://play.google.com/store/apps/details?id=com.miragestudio.polygons" target="_blank" class="resource-link">Augmented Polyhedrons</a>.</p>
+                <img src="https://play-lh.googleusercontent.com/3P6WL5-mJ_iIh_HrN_BVCn5ejTWSXdTZrrsRpkysw7iM-8RBlGkCVkztUAj8JFmV4gnjWnIUv5Z6W4VZ2qz2O9w=w526-h296-rw" alt="Augmented Polyhedrons" class="mt-3 rounded-md border border-gray-200" style="max-width: 300px; width: 100%;">
+                <p><strong>Archivo para realidad aumentada:</strong> <a href="https://mirage.ticedu.fr/wp-content/uploads/2014/07/00-marqueurs-universel.pdf" target="_blank" class="resource-link">PDF Cuerpos</a>.</p>
+                <p><strong>Aplicación Geometría RA:</strong> se puede descargar de <a href="https://play.google.com/store/apps/details?id=com.lisaymaggie.geometryar" target="_blank" class="resource-link">Google Play</a>.</p>
+                <img src="https://play-lh.googleusercontent.com/hUiRKRJ9IWx6MWZgDb9clvghY6TgQIGmVFwW8Tgw1aZTzQ0kbMf9u79I5AyM4CdsvM3Zik7egCyqUrx3qX1j=w526-h296-rw" alt="Geometría RA" class="mt-3 rounded-md border border-gray-200" style="max-width: 300px; width: 100%;">
+            </div>
+        </div>
+
+        <h3 class="mt-8">Ejemplo actual de uso de Realidad Virtual</h3>
+        <p>Buenos Aires Histórica VR propone una experiencia inmersiva para recorrer escenas de la ciudad desde una perspectiva histórica.</p>
+        <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 my-4">
+            <a href="https://buenosaireshistoricavr.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRzdgSWPYRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAad5-FzbB1Mn0SC5kHkX4ETHRuIWOROvph_6rhQYV0sZp3xrmzleLxo1yRjZbg_aem_vnjk9gjpK019mZIkxSryQA" target="_blank" class="resource-link block break-all">Buenos Aires Histórica VR →</a>
+            <img src="https://cdn.myportfolio.com/b48a8459-e4eb-49c8-965a-66a2c31a2ce6/fb53ff3f-34dd-41e9-afdc-fa9f0fb2a503_rw_1920.png?h=d29f9d11c6a6b21cbddacd9730916ab3" alt="Buenos Aires Histórica VR" class="mt-3 rounded-md border border-gray-200" style="max-width: 320px; width: 100%;">
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <div class="aside bg-indigo-50 border-l-4 border-indigo-400">
+            <span>💡</span>
+            <div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Para tener en cuenta</h3>
+                <p>Durante esta clase se observó que las tecnologías inmersivas no solo permiten “ver” contenidos de otra manera, sino también pensar nuevas formas de enseñar y aprender. Es importante valorar cómo la realidad aumentada y la realidad virtual pueden ayudar a comprender conceptos complejos, estimular la participación y convertir los recursos digitales en experiencias significativas para el aula.</p>
+            </div>
+        </div>
+
+        <footer class="mt-10 mb-20">
+            <div class="pt-10 border-t border-gray-200">
+                <a href="../index.html" class="back-link">
+                    <span>←</span> Volver a la Hoja de Ruta
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
