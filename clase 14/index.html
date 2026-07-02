@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 14 - Enseñar con Tecnología</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fbfbfa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #37352f;
+      line-height: 1.6;
+    }
+    .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+    h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.75rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 2rem !important; }
+    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 4px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+    .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.65rem; }
+    .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.25rem; background: white; }
+    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .back-link:hover { color: #37352f; }
+    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+    .resource-link:hover { text-decoration: underline; }
+    .video-wrapper { position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 20px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    .image-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .image-row img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .form-frame { width: 100%; min-height: 800px; border: 0; background: white; }
+    .link-with-img { display:flex; gap:12px; align-items:center; }
+    .link-with-img img { max-width:140px; border-radius:6px; border:1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+  <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+  <div class="notion-container">
+    <nav class="mb-12">
+      <a href="../index.html" class="back-link">
+        <span>←</span> Volver a la Hoja de Ruta
+      </a>
+    </nav>
+
+    <header class="mb-14">
+      <h1>Clase 14</h1>
+      <p class="text-gray-500 italic text-xl">Fecha: 2 de julio de 2026 — Modalidad: Virtual</p>
+      <h2 class="border-none !mt-4">Gamificación</h2>
+    </header>
+
+    <div class="aside border-l-4 border-purple-500">
+      <span>🎯</span>
+      <div>
+        <h3 class="!mt-0 !mb-2 !text-xl">Tareas de esta clase</h3>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>Ver el video explicativo del grupo.</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>Ingresar a la presentación y explorar los enlaces.</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>Responder las preguntas del formulario de asistencia.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <h2>1. Presentación del grupo</h2>
+    <p>Video explicativo creado por el grupo 3: <strong>Almada Ivana, Ramirez Luana, Vallejos Natalia Ayelen, Matias Estefania y Gutierrez Anahi</strong>.</p>
+
+    <div class="video-wrapper">
+      <iframe loading="lazy" src="https://drive.google.com/file/d/1xnZiGP4d7ss9uwsSEjBNFg87Pv2yLwAj/preview" allowfullscreen></iframe>
+    </div>
+
+    <p class="italic">Presentación digital que permite entrar a los links y ver los videos</p>
+
+    <p>
+      <a href="https://canva.link/rp559l2gub2ofpb" target="_blank" class="resource-link">Presentación digital (Canva) — abrir en nueva pestaña</a>
+    </p>
+
+    <div class="bg-emerald-50 border-l-4 border-emerald-500 rounded-lg p-6 mt-8">
+      <h3 class="!mt-0 !mb-3 !text-xl text-emerald-900">¡Felicitaciones Grupo!</h3>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <h2>2. Actividad de asistencia</h2>
+    <p>Luego de mirar la presentación, respondan las preguntas del formulario. Esta actividad permite acreditar la asistencia correspondiente a la clase virtual de hoy.</p>
+
+    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6 mt-6">
+      <h3 class="!mt-0 !mb-4 !text-lg text-blue-900">Formulario de la clase</h3>
+      <p>Si el formulario no carga correctamente en esta página, pueden abrirlo desde este enlace:</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfodqcDldeFNNtSSoxNOucz61v3drupvhkUnPbk1QdLXdVpxQ/viewform" target="_blank" class="resource-link">https://docs.google.com/forms/d/e/1FAIpQLSfodqcDldeFNNtSSoxNOucz61v3drupvhkUnPbk1QdLXdVpxQ/viewform</a>
+    </div>
+
+    <div class="mt-8 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfodqcDldeFNNtSSoxNOucz61v3drupvhkUnPbk1QdLXdVpxQ/viewform?embedded=true" class="form-frame" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <h2>3. Recursos propuestos por la profesora</h2>
+
+    <h3>Minecraft en Matemática</h3>
+    <div class="link-with-img mt-3">
+      <a href="https://minecraftenmatematica.blogspot.com/" target="_blank" class="resource-link">https://minecraftenmatematica.blogspot.com/</a>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMEJ2yuh9wQOHIja6nUVzKZY4KYaSISkWTItOCYSWS63uWK7bQujgaSqKN3HdYbto3vWd1Sw_7uDqXJvwdo0mO6v7Rie2IpO30XyTkrfQSn3fgQExdszrDyMzPirk4qLaGIPxq3RJHUCAI/s640/meme.jpg" alt="Minecraft en Matemática">
+    </div>
+
+    <h3 class="mt-6">Juegos y recursos</h3>
+    <p>Juego hechos en GeoGebra:</p>
+    <p><a href="https://www.geogebra.org/m/pwfgamj3" target="_blank" class="resource-link">Rizzo, K. Jugamos con las mates?</a> (el libro de GeoGebra incluye juegos y video tutoriales)</p>
+    <p><a href="https://www.geogebra.org/m/krrw2ftp#material/njsdzpyt" target="_blank" class="resource-link">Del Rio Laura - GeoGebra</a></p>
+
+    <h3>Juegos para matemática</h3>
+    <p><a href="http://josecarranz.wixsite.com/matematicas" target="_blank" class="resource-link">Star Maths</a></p>
+    <p><a href="http://quintohumanitas.wixsite.com/mathroyale" target="_blank" class="resource-link">Math Royale</a></p>
+    <p><a href="https://proyectodescartes.org/miscelanea/materiales_didacticos/reajuegos-JS/index.html" target="_blank" class="resource-link">Reajuegos-JS (Proyectos Descartes)</a></p>
+    <p><a href="https://mobbyt.com/portal/" target="_blank" class="resource-link">Sitio para crear juegos (Mobbyt)</a></p>
+    <p><a href="https://gamificacioneducativa.com/" target="_blank" class="resource-link">Gamificación Educativa</a></p>
+    <p><a href="https://campus.ort.edu.ar/articulo/1866383" target="_blank" class="resource-link">Museo virtual de matemática (Mexico)</a></p>
+
+    <p>Bibliografía:</p>
+    <p><a href="https://www.educ.ar/recursos/158843/tendencias-culturales-en-educacion-las-narrativas-ludicas" target="_blank" class="resource-link">Portal Educ.ar (2023). Tendencias culturales en educación: las narrativas lúdicas</a></p>
+
+    <div class="aside bg-indigo-50 border-l-4 border-indigo-400 mt-8">
+      <span>💡</span>
+      <div>
+        <h3 class="!mt-0 !mb-2 !text-xl">Para tener en cuenta</h3>
+        <p>Exploren los enlaces compartidos y piensen cómo incorporar dinámicas lúdicas en sus propuestas didácticas.</p>
+      </div>
+    </div>
+
+    <footer class="mt-10 mb-20">
+      <div class="pt-10 border-t border-gray-200">
+        <a href="../index.html" class="back-link">
+          <span>←</span> Volver a la Hoja de Ruta
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
