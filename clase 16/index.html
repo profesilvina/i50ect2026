@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 16 - Enseñar con Tecnología</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fbfbfa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #37352f;
+      line-height: 1.6;
+    }
+    .notion-container { max-width: 950px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+    h2 { font-size: 2.1rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.4rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.5rem !important; }
+    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 6px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .back-link:hover { color: #37352f; }
+    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+    .resource-link:hover { text-decoration: underline; }
+    .video-placeholder {
+      position: relative; width: 100%; padding-top: 56.25%; background-size: cover; background-position: center; border-radius: 12px; cursor: pointer; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 24px 0; display: block; text-decoration: none;
+    }
+    .video-placeholder::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.2); transition: background 0.3s; }
+    .video-placeholder:hover::before { background: rgba(0,0,0,0.4); }
+    .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 0, 0, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+    .video-placeholder:hover .play-button { transform: translate(-50%, -50%) scale(1.1); background: rgba(255, 0, 0, 1); }
+    .play-icon { width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid white; margin-left: 5px; }
+    .tree-view { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.5rem; }
+    .tree-view ul { list-style: none; padding-left: 1.25rem; }
+    .tree-view > ul { padding-left: 0; }
+    .tree-view li { position: relative; padding: 0.35rem 0 0.35rem 1.5rem; }
+    .tree-view li::before { content: "├─ "; position: absolute; left: 0; color: #9ca3af; font-family: monospace; font-weight: bold; }
+    .tree-view li:last-child::before { content: "└─ "; }
+    .checklist { list-style: none !important; padding-left: 0.5rem !important; }
+    .checklist li { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem; }
+    .checklist li::before { content: "☐"; font-size: 1.2rem; font-weight: bold; color: #37352f; flex-shrink: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #e5e7eb; padding: 12px 14px; text-align: left; vertical-align: top; }
+    th { background-color: #f8fafc; font-weight: 700; color: #1e293b; }
+    tr:nth-child(even) { background-color: #fafaf9; }
+    ol, ul { padding-left: 1.5rem; margin: 0.8rem 0 1rem; }
+    li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+  <div class="notion-container">
+    <nav class="mb-10">
+      <a href="../index.html" class="back-link">
+        <span>←</span> Volver a la Hoja de Ruta
+      </a>
+    </nav>
+
+    <header class="mb-12">
+      <h1>Clase 16</h1>
+      <p class="text-gray-500 italic text-xl">Fecha: 20 de agosto de 2026 — Modalidad: Presencial</p>
+      <h2 class="border-none !mt-4">Avanzamos con la construcción del Portfolio Digital</h2>
+    </header>
+
+    <div class="aside border-l-4 border-purple-500">
+      <span>💡</span>
+      <div>
+        <h3 class="!mt-0 !mb-2 !text-xl">¿Qué es y qué representa el Portfolio Digital?</h3>
+        <p>El portfolio no es un simple listado de enlaces a tareas: funciona como la <b>memoria de tu recorrido formativo</b> como futuros/as docentes de Matemática, donde cada trabajo está contextualizado y construye tu <b>identidad digital</b> profesional.</p>
+      </div>
+    </div>
+
+    <!-- Video Tutorial Google Sites -->
+    <section class="mb-10">
+      <h2>Video tutorial sobre construcción del portfolio en Google Sites</h2>
+      <p>Te comparto el tutorial detallado para configurar, organizar y diseñar tu portfolio en Google Sites:</p>
+      
+      <a href="https://www.youtube.com/watch?v=IpwKVAAFGVY" target="_blank" class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/IpwKVAAFGVY/maxresdefault.jpg');">
+        <div class="play-button"><div class="play-icon"></div></div>
+      </a>
+      <p class="text-center">
+        <a href="https://www.youtube.com/watch?v=IpwKVAAFGVY" target="_blank" class="link-full font-semibold text-blue-600 hover:underline">🔗 Mirar tutorial "Cómo crear un Portfolio en Google Sites" en YouTube</a>
+      </p>
+    </section>
+
+    <!-- Estructura del Sitio -->
+    <section class="mb-10">
+      <h2>Estructura base del sitio y jerarquía visual</h2>
+      <p class="mb-4">Las páginas deben organizarse mediante una <b>estructura de árbol</b> (con páginas principales y subpáginas), en lugar de una estructura puramente secuencial.</p>
+
+      <div class="bg-amber-50 border-l-4 border-amber-500 rounded-lg p-5 my-6">
+        <h3 class="!mt-0 !mb-2 !text-lg text-amber-900 font-bold">🔍 Sitio de ejemplo con estructura sugerida</h3>
+        <p class="mb-2">Explorá este modelo para ver una posible organización visual y jerárquica:</p>
+        <a href="https://sites.google.com/view/titulo-del-sitio/inicio?authuser=0" target="_blank" class="resource-link text-base">👉 https://sites.google.com/view/titulo-del-sitio/inicio</a>
+      </div>
+
+      <h3 class="mt-6 mb-3">Esquema en árbol sugerido:</h3>
+      <div class="tree-view font-mono text-gray-800 text-sm md:text-base">
+        <ul>
+          <li><b>🏠 Inicio:</b> Presentación personal, foto/imagen interactiva, datos de la materia e institución, incluyendo link del instituto, propósito del portfolio.</li>
+          <li><b>📚 Marco Teórico:</b> TPACK, Modelo SAMR, Aula Invertida y ABP (breve definición conceptual, imágenes o videos ilustrativos y enlaces para «leer más» correctamente citados).</li>
+          <li><b>🌐 Ciudadanía Digital:</b> (breve concepto)
+            <ul>
+              <li><b>Tu tema de Ciudadanía:</b> (breve concepto, inserción del mural digital grupal).</li>
+            </ul>
+          </li>
+          <li><b>💡 Tecnología Educativa:</b>
+            <ul>
+              <li><b>Tu tema investigado:</b> Presentación digital, actividad del tema, rúbrica de evaluación.</li>
+            </ul>
+          </li>
+          <li><b>🧩 Actividades:</b> Recopilación y registro interactivo de las propuestas desarrolladas (FotoGebra, Realidad Aumentada, Escape Room, Programación y Robótica).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pasos para publicar -->
+    <section class="mb-10">
+      <h2>Pasos para publicar el sitio y obtener el link</h2>
+      <p>Para que tu portfolio sea accesible públicamente y pueda ser evaluado, seguí estos pasos:</p>
+
+      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm my-4">
+        <ol class="list-decimal pl-6 space-y-3">
+          <li>
+            <b>Configurar la dirección web:</b> Dentro del editor de Google Sites, hacé clic en el botón azul <b>«Publicar»</b> (arriba a la derecha). En el cuadro emergente, elegí una dirección web clara y representativa (por ejemplo: <i>portfolio-ect-tunombre</i>).
+          </li>
+          <li>
+            <b>Verificar permisos de visualización:</b> En el apartado <i>«Quién puede ver mi sitio»</i>, asegurate de que esté configurado en <b>«Cualquier persona»</b> o <b>«Público»</b> para que no requiera permisos especiales.
+          </li>
+          <li>
+            <b>Confirmar publicación:</b> Presioná nuevamente el botón <b>«Publicar»</b>.
+          </li>
+          <li>
+            <b>Copiar el enlace público del sitio:</b> Hacé clic en el ícono de vínculo 🔗 (<i>«Copiar vínculo a un sitio publicado»</i>) que se encuentra en la barra superior junto al botón Publicar.
+          </li>
+          <li>
+            <b>Comprobar en pestaña de incógnito:</b> Abrí una ventana de incógnito en tu navegador y pegá el enlace copiado para confirmar que se visualiza perfectamente sin haber iniciado sesión.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Rúbrica de Evaluación -->
+    <section class="mb-10">
+      <h2>Rúbrica de evaluación del Portfolio Individual</h2>
+      <p>A continuación se detalla la matriz de valoración. Lean cada criterio con atención para asegurarse de cumplir con todos los requerimientos académicos y técnicos:</p>
+
+      <div class="overflow-x-auto my-6 rounded-lg border border-gray-200 shadow-sm">
+        <table class="min-w-full">
+          <thead>
+            <tr>
+              <th class="w-1/4">Criterios de Evaluación</th>
+              <th class="w-1/4 text-emerald-800 bg-emerald-50">Excelente</th>
+              <th class="w-1/4 text-blue-800 bg-blue-50">Muy bueno<br><span class="text-xs font-normal text-blue-600">(Alcanza Promoción)</span></th>
+              <th class="w-1/4 text-amber-800 bg-amber-50">Bueno<br><span class="text-xs font-normal text-amber-600">(Alcanza Aprobación)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-bold text-gray-800">PRESENTACIÓN general del sitio</td>
+              <td>
+                • El portfolio tiene un nombre representativo.<br>
+                • Contiene la imagen interactiva de su autor/a.<br>
+                • Da referencias del objetivo del sitio, la materia y el instituto.<br>
+                • No tiene errores de ortografía ni gramática.<br>
+                • Las imágenes de encabezados y fondo son muy originales.
+              </td>
+              <td>Contiene más de la mitad de los ítems pedidos.</td>
+              <td>Contiene la mitad de los ítems pedidos.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-gray-800">DISTRIBUCIÓN DE LA INFORMACIÓN</td>
+              <td>Creación de diferentes páginas para cada tema. La información se encuentra organizada por contenidos. El sitio es de fácil lectura y comprensión.</td>
+              <td>La organización de las páginas no es del todo precisa pero están presentes todos los temas requeridos.</td>
+              <td>El sitio no es de fácil comprensión, no tiene toda la información requerida.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-gray-800">PRESENTACIÓN DE INFORMACIÓN</td>
+              <td>Se presentan todas las actividades visibles, se brindan definiciones y datos relacionados a los temas tratados, de forma ordenada. No hay dificultades para acceder a los enlaces incrustados.</td>
+              <td>Algunas actividades solo tienen el link. Brinda solo algunos datos básicos y los trabajos correspondientes, algunos links no son accesibles.</td>
+              <td>Se dificulta el acceso a la información, es confusa y no tiene criterio. No están todas las actividades obligatorias.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-gray-800">IMÁGENES</td>
+              <td>Que se especifique la fuente de donde sacan la imagen, tengan relación con los temas a los que se las adjunta y cumplan con un propósito visual, manteniendo la armonía de la página.</td>
+              <td>Que se especifique la fuente de donde sacan la imagen. Cantidad de imágenes necesaria para complementar la información de la página.</td>
+              <td>Escasa incorporación de imágenes, predecibles o poco relacionadas con la información a presentar.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-gray-800">FUNDAMENTACIÓN</td>
+              <td>Tiene citas de la bibliografía de la clase o de otra fuente, dejando constancia siempre de la fuente utilizada. Utilización también de impresiones propias (subjetividad).</td>
+              <td>Hay buen desarrollo de ideas y datos que enriquecen el trabajo, pero no en todas las actividades. No todas las citas bibliográficas son adecuadas.</td>
+              <td>Contiene muy poca fundamentación. Hay buena expresión propia pero se puede ver que falta contenido.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Checklist Técnico -->
+    <section class="mb-10">
+      <h2>Checklist Técnico antes de Publicar en Google Sites</h2>
+      <div class="aside bg-slate-50 border-l-4 border-slate-600">
+        <ul class="checklist text-gray-800">
+          <li><b>Ortografía:</b> Usar corrector ortográfico para controlar que no falten acentos ni haya errores de ortografía o redacción.</li>
+          <li><b>Permisos en Google Drive:</b> Todos los archivos incrustados (videos, PDFs, planillas, imágenes) deben tener permiso configurado como: <i>«Cualquier usuario que tenga el vínculo puede ver»</i>.</li>
+          <li><b>Elementos interactivos funcionando:</b> Verificar que el Padlet, presentaciones digitales (Genially, Canva), construcciones de GeoGebra, etc., se visualicen de forma interactiva y responsiva dentro de la página.</li>
+          <li><b>Jerarquía y Diseño:</b> Uso de títulos claros, contrastes legibles, tipografía uniforme y menú de navegación superior accesible.</li>
+          <li><b>Botón Publicar:</b> Hacer clic en el botón azul <b>Publicar</b> en Google Sites y verificar la visualización final abriendo el link en una pestaña de incógnito.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bg-indigo-50 border-l-4 border-indigo-400 rounded-lg p-6 mt-8">
+      <h3 class="!mt-0 !mb-2 !text-xl text-indigo-950">Para tener en cuenta</h3>
+      <p>El portfolio es una construcción progresiva y reflexiva. Asegurate de que cada página transmita no solo qué hiciste, sino también el sentido pedagógico de la tecnología aplicada a la enseñanza de la matemática.</p>
+    </div>
+
+    <footer class="mt-10 mb-20">
+      <div class="pt-10 border-t border-gray-200">
+        <a href="../index.html" class="back-link">
+          <span>←</span> Volver a la Hoja de Ruta
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
