@@ -1,257 +1,213 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clase 17 - Enseñar con Tecnología</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      background-color: #fbfbfa;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-      color: #37352f;
-      line-height: 1.6;
-    }
-    .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
-    h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
-    h3 { font-size: 1.6rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.75rem !important; }
-    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 6px; margin: 1.5rem 0; display: flex; gap: 1rem; }
-    .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.65rem; }
-    .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.25rem; background: white; }
-    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
-    .back-link:hover { color: #37352f; }
-    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
-    .resource-link:hover { text-decoration: underline; }
-    .embed-frame { width: 100%; border: 0; background: white; }
-    .slides-frame { aspect-ratio: 16 / 9; width: 100%; min-height: 400px; border-radius: 8px; }
-    .quote-box {
-      border-left: 4px solid #9061f9;
-      background: #fcfaff;
-      padding: 1.25rem 1.5rem;
-      border-radius: 0 8px 8px 0;
-      margin: 1.5rem 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 17 - Enseñar con Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #37352f;
+            line-height: 1.6;
+        }
+        .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+        h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.75rem !important; }
+        .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 6px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+        .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .back-link:hover { color: #37352f; }
+        .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+        .resource-link:hover { text-decoration: underline; }
+        .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.65rem; }
+        .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.25rem; background: white; }
+        .embed-frame { width: 100%; border: 0; background: white; }
+        .prezi-frame { aspect-ratio: 16 / 9; min-height: 420px; border-radius: 8px; }
+        .form-frame { width: 100%; min-height: 1800px; border: 0; background: white; }
+        .quote-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #6366f1;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+        .bio-box {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.25rem;
+            font-size: 0.875rem;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+        .bio-box h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-  <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
-  <div class="notion-container">
-    <nav class="mb-12">
-      <a href="../index.html" class="back-link">
-        <span>←</span> Volver a la Hoja de Ruta
-      </a>
-    </nav>
+    <img src="../banneri24.png" alt="Banner" class="w-full h-auto mb-8">
+    <div class="notion-container">
+        <nav class="mb-12">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Volver a la Hoja de Ruta
+            </a>
+        </nav>
 
-    <header class="mb-14">
-      <h1>Clase 17</h1>
-      <p class="text-gray-500 italic text-xl">Fecha: 27 de agosto de 2026 — Modalidad: Virtual</p>
-      <h2 class="border-none !mt-4">Programando en matemática</h2>
-    </header>
+        <header class="mb-14">
+            <h1>Clase 17</h1>
+            <p class="text-gray-500 italic text-xl">Fecha: viernes 28 de agosto de 2026 — Modalidad: Virtual</p>
+            <h2 class="border-none !mt-4">Programando en matemática</h2>
+        </header>
 
-    <div class="aside border-l-4 border-purple-500">
-      <span>🎯</span>
-      <div>
-        <h3 class="!mt-0 !mb-2 !text-xl">Tareas de esta clase</h3>
-        <div class="checklist-item">
-          <div class="checkbox"></div>
-          <span>Recorrer la presentación del grupo sobre Programación en Matemática.</span>
-        </div>
-        <div class="checklist-item">
-          <div class="checkbox"></div>
-          <span>Consultar el resumen de la capacitación en el uso de Scratch en clases de matemática.</span>
-        </div>
-        <div class="checklist-item">
-          <div class="checkbox"></div>
-          <span>Leer las reflexiones teóricas sobre Seymour Papert, el Construccionismo y Mitchel Resnick.</span>
-        </div>
-        <div class="checklist-item">
-          <div class="checkbox"></div>
-          <span>Completar el formulario de acreditación de asistencia de la clase del 27/8.</span>
-        </div>
-        <div class="checklist-item">
-          <div class="checkbox"></div>
-          <span>Explorar el material de lectura y recursos compartidos.</span>
-        </div>
-      </div>
-    </div>
-
-    <hr class="my-12 border-gray-200">
-
-    <!-- Sección 1: Presentación del Grupo -->
-    <section class="mb-12">
-      <h2>1. Presentación del grupo</h2>
-      <p>El grupo integrado por <strong>Pedro, Daniela y Fabián</strong> investigó sobre el tema:</p>
-
-      <div class="aside border-l-4 border-amber-500 bg-amber-50 mt-6 mb-6">
-        <span>ℹ️</span>
-        <div>
-          <p class="text-amber-950 font-medium">Pedro, Daniela y Fabián hicieron una parte de la presentación del tema, pero no se contactaron para completarla.</p>
-          <p class="text-amber-900 text-sm mt-1">Pueden recorrer la presentación interactiva a continuación o abrirla en una pestaña nueva.</p>
-        </div>
-      </div>
-
-      <h3 class="mt-8 mb-3">Presentación de programación</h3>
-      <div class="mt-4 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-        <iframe src="https://docs.google.com/presentation/d/1o2kVt9oHTEQaVbawxjd0HdF-hlB1Q4xjFZdf8MmVhMg/embed?start=false&loop=false&delayms=3000" class="embed-frame slides-frame" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
-      <p class="mt-3 text-center">
-        <a href="https://docs.google.com/presentation/d/1o2kVt9oHTEQaVbawxjd0HdF-hlB1Q4xjFZdf8MmVhMg/edit?slide=id.p7#slide=id.p7" target="_blank" class="resource-link">
-          🔗 Abrir presentación en Google Slides en nueva pestaña
-        </a>
-      </p>
-    </section>
-
-    <hr class="my-12 border-gray-200">
-
-    <!-- Sección 2: Programación con Scratch -->
-    <section class="mb-12">
-      <h2>2. Programación con Scratch en matemática</h2>
-      <p class="mb-4">Les comparto un resumen de una capacitación en el uso del lenguaje de programación <strong>Scratch</strong> en las clases de matemática, que complementa la presentación anterior:</p>
-
-      <div class="mt-4 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-        <iframe src="https://docs.google.com/presentation/d/1_643PcxIgt-X7TpeUP0XpEee3ndriKC5gGnHXhPZJWQ/embed?start=false&loop=false&delayms=3000" class="embed-frame slides-frame" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
-      <p class="mt-3 text-center">
-        <a href="https://docs.google.com/presentation/d/1_643PcxIgt-X7TpeUP0XpEee3ndriKC5gGnHXhPZJWQ/edit?usp=sharing" target="_blank" class="resource-link">
-          🔗 Abrir presentación en Google Slides en nueva pestaña
-        </a>
-      </p>
-    </section>
-
-    <hr class="my-12 border-gray-200">
-
-    <!-- Sección 3: Fundamentación Teórica -->
-    <section class="mb-12">
-      <h2>3. ¿Qué tiene que ver la programación de computadoras (escribir código), con matemática?</h2>
-
-      <div class="quote-box my-6">
-        <p class="italic text-lg text-gray-800 leading-relaxed">
-          «Todo educador debe haber sentido cierta envidia al ver a los niños jugar a los videojuegos: Si esa energía pudiera movilizarse al servicio del aprendizaje de algo que el educador valora. Pero la envidia puede adoptar formas muy diferentes. Los instruccionistas muestran su orientación concretando el deseo como un deseo de juegos que enseñen matemáticas u ortografía o geografía o lo que sea. La mente construccionista se revela cuando el deseo lleva a imaginar a los niños haciendo los juegos en lugar de sólo jugarlos. En lugar de desear que los juegos instruyan a los niños, anhelan que los niños construyan juegos»
-        </p>
-        <p class="text-right font-bold text-purple-900 mt-3">— Seymour Papert</p>
-      </div>
-
-      <!-- Tarjeta informativa: ¿Quién fue Seymour Papert? -->
-      <div class="bg-gray-50 border border-gray-300 rounded-lg p-5 my-6 text-sm text-gray-700">
-        <h4 class="font-bold text-gray-900 text-base mb-2">🔍 ¿Quién fue Seymour Papert?</h4>
-        <p class="mb-3">
-          <strong>Seymour Papert (1928–2016)</strong> fue un matemático, computólogo y educador sudafricano-estadounidense, reconocido como uno de los pioneros de la inteligencia artificial y de la integración de la tecnología en la educación.
-        </p>
-        <ul class="list-disc pl-5 space-y-2">
-          <li>
-            <strong>El Construccionismo:</strong> Discípulo y colaborador de Jean Piaget en Ginebra, Papert amplió la teoría del constructivismo para fundar el construccionismo, planteando que el aprendizaje es más profundo y significativo cuando las personas construyen activamente objetos tangibles o artefactos compartibles (como programas de computadora, modelos o robots).
-          </li>
-          <li>
-            <strong>Lenguaje Logo y la "Tortuga":</strong> En el MIT (donde cofundó el Laboratorio de Inteligencia Artificial junto a Marvin Minsky), creó a finales de los años 60 el lenguaje de programación Logo. Su objetivo era dar a los niños una herramienta para pensar sobre el propio pensamiento, utilizando la famosa tortuga gráfica para explorar conceptos matemáticos y espaciales mediante código.
-          </li>
-          <li>
-            <strong>Impacto educativo:</strong> Su visión sentó las bases para el aprendizaje basado en proyectos mediado por tecnología, inspirando desarrollos posteriores como la robótica educativa (Lego Mindstorms), el entorno de programación Scratch y el proyecto One Laptop per Child (OLPC). Su obra más influyente es el libro <em>Mindstorms: Children, Computers, and Powerful Ideas</em> (1980).
-          </li>
-        </ul>
-      </div>
-
-      <div class="my-6 space-y-4 text-base text-gray-800">
-        <p>
-          El profesor <strong>Mitchel Resnick</strong>, director del proyecto <em>Lifelong Kindergarten</em> en el MIT Media Lab y creador del lenguaje Scratch, afirma:
-        </p>
-        <blockquote class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg italic text-amber-950">
-          “En el mundo rápidamente cambiante de hoy, la gente debe continuamente crear soluciones creativas a problemas inesperados. El éxito se basa no sólo en lo que tú sabes o cuánto sabes, sino en tu habilidad de pensar y actuar creativamente.” <span class="not-italic font-semibold">(Resnick 2007)</span>
-        </blockquote>
-        <p>
-          Por este motivo, desarrollar una <strong>actitud creativa</strong> resulta de interés también para las instituciones educativas, donde no suelen ejercitarse estas aptitudes. El trabajo escolar se centra, por lo general, en resolver problemas específicos, por lo que luego resulta muy difícil poder aplicar y adaptar estas soluciones como respuesta a problemas inesperados o diferentes. En este sentido, las nuevas tecnologías proporcionan una oportunidad para desarrollar tal actitud ya que permiten crear producciones en gran variedad de formatos (digitales o físicos) y proporcionan también plataformas digitales donde compartirlas y seguir construyéndolas de manera colaborativa.
-        </p>
-      </div>
-
-      <div class="bg-slate-50 border-l-4 border-slate-400 p-4 rounded-r-lg text-sm text-gray-600 mt-6">
-        <strong>Referencias:</strong> Bordignon, F. (2019). <em>Saberes digitales en la educación primaria y secundaria de la República Argentina</em>. <a href="https://unipe.educar.gob.ar/unipe" target="_blank" class="resource-link">https://unipe.educar.gob.ar/unipe</a>
-      </div>
-    </section>
-
-    <hr class="my-12 border-gray-200">
-
-    <!-- Sección 4: Asistencia -->
-    <section class="mb-12">
-      <h2>4. Formulario de asistencia</h2>
-      <p class="mb-4">Para acreditar la asistencia de la clase del <strong>27/8</strong> deben completar el siguiente formulario:</p>
-
-      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-6">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="text-3xl">📋</div>
-          <div>
-            <h3 class="!mt-0 !mb-1 !text-lg text-gray-900 font-bold">Acreditación de Asistencia — Clase 17 (27/08)</h3>
-            <p class="text-gray-600 text-sm">Completen el formulario en línea para registrar su participación en la clase virtual.</p>
-          </div>
-        </div>
-        <div class="mt-4">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZbl79y4lAP_YIC_gy5LkBpBaEDo9A-ebdCwYKCD7sgeomng/viewform?embedded=true" width="100%" height="650" frameborder="0" marginheight="0" marginwidth="0" class="w-full rounded-lg border border-gray-200">Cargando formulario…</iframe>
-        </div>
-        <p class="mt-4 text-center">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZbl79y4lAP_YIC_gy5LkBpBaEDo9A-ebdCwYKCD7sgeomng/viewform?usp=dialog" target="_blank" class="resource-link text-base">
-            📝 Abrir formulario en una nueva pestaña
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <hr class="my-12 border-gray-200">
-
-    <!-- Sección 5: Recursos y Material de Lectura -->
-    <section class="mb-12">
-      <h2>5. Recursos y material de lectura</h2>
-      <p class="mb-4">Les comparto los siguientes materiales de consulta y lectura recomendada:</p>
-
-      <div class="grid grid-cols-1 gap-6">
-        <!-- Recurso 1: Programación y Robótica en Secundaria -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-          <div class="flex items-start gap-4">
-            <div class="text-3xl">📖</div>
+        <div class="aside border-l-4 border-blue-500">
+            <span>🎯</span>
             <div>
-              <h3 class="!mt-0 !mb-1 !text-lg text-blue-900 font-bold">Programación y Robótica en Secundaria</h3>
-              <p class="text-gray-600 text-sm mb-3">Interesantes ejemplos y propuestas prácticas de programación y robótica para el nivel secundario.</p>
-              <div>
-                <a href="https://libros.catedu.es/books/programacion-y-robotica-en-secundaria" target="_blank" class="resource-link text-base">
-                  🌐 Ver en línea (libros.catedu.es)
-                </a>
-              </div>
+                <h3 class="!mt-0 !mb-2 !text-xl">Tareas de esta clase</h3>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Mirar la investigación sobre <strong>Programando en matemática</strong> presentada por el Grupo 3.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Responder las preguntas del formulario para acreditar la asistencia de la clase virtual.</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>Leer las reflexiones pedagógicas y explorar la bibliografía recomendada sobre programación y robótica educativa.</span>
+                </div>
             </div>
-          </div>
         </div>
 
-        <!-- Recurso 2: Bordignon (2018) -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-          <div class="flex items-start gap-4">
-            <div class="text-3xl">📄</div>
+        <hr class="my-12 border-gray-200">
+
+        <!-- Sección 1: Presentación del Grupo -->
+        <h2>1. Presentación del grupo</h2>
+        <p>En la clase virtual de hoy trabajamos con el tema <strong>Programando en matemática</strong>. El <strong>Grupo 3</strong>, integrado por <strong>Ernesta, Enzo; Guerrero, Michelle; Talavera, Luciana; Valdez, Lautaro y Zancristoforo, Gian</strong>, investigó sobre este tema y nos presenta su producción.</p>
+
+        <div class="aside border-l-4 border-purple-500 mt-6">
+            <span>💻</span>
             <div>
-              <h3 class="!mt-0 !mb-1 !text-lg text-emerald-900 font-bold">Saberes digitales en la Educación Primaria y Secundaria Argentina</h3>
-              <p class="text-gray-600 text-sm mb-1"><strong>Autor:</strong> Fernando Bordignon (2018)</p>
-              <p class="text-gray-600 text-sm mb-3">Documento de análisis y fundamentos sobre la incorporación de saberes digitales y pensamiento computacional en el sistema educativo.</p>
-              <div>
-                <a href="https://drive.google.com/file/d/14jaz5sAtGqHOlUvIUM92lYZ-2GXPCU7N/view?usp=sharing" target="_blank" class="resource-link text-base">
-                  📁 Ver documento en Google Drive
-                </a>
-              </div>
+                <p><strong>Tema de investigación:</strong> Programando en matemática, pensamiento computacional, lenguajes de programación y su integración didáctica en el aula de matemática.</p>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <div class="aside bg-indigo-50 border-l-4 border-indigo-400 mt-8">
-      <span>💡</span>
-      <div>
-        <h3 class="!mt-0 !mb-2 !text-xl text-indigo-950">Para reflexionar</h3>
-        <p>Programar en matemática no es solo aplicar algoritmos o calcular números; es una manera de modelar ideas, experimentar con hipótesis y construir comprensiones conceptuales profundas a través de la creatividad y el pensamiento computacional.</p>
-      </div>
+        <div class="bg-emerald-50 border-l-4 border-emerald-500 rounded-lg p-6 mt-8">
+            <h3 class="!mt-0 !mb-3 !text-xl text-emerald-900">¡Felicitaciones Grupo 3!</h3>
+            <p class="text-lg text-emerald-950">Compartimos la presentación digital interactiva donde pueden recorrer la investigación y acceder a los contenidos desarrollados por sus compañeros/as.</p>
+        </div>
+
+        <h3>Presentación digital</h3>
+        <p>En la presentación pueden recorrer el material elaborado por el grupo:</p>
+        <div class="mt-6 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+            <iframe src="https://prezi.com/p/embed/AmXCCJKmvVC2KPHc4Es0/" class="embed-frame prezi-frame" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+        </div>
+        <p class="mt-3 text-sm text-gray-600">
+            Si la presentación no se visualiza correctamente, pueden abrirla en pantalla completa desde este enlace: 
+            <a href="https://prezi.com/view/AmXCCJKmvVC2KPHc4Es0/?referral_token=AV42MllnB3FN" target="_blank" class="resource-link">🔗 Ver presentación en Prezi</a>.
+        </p>
+
+        <hr class="my-12 border-gray-200">
+
+        <!-- Sección 2: Actividad de asistencia -->
+        <h2>2. Actividad de asistencia</h2>
+        <p>Luego de mirar la presentación, respondan las preguntas del formulario para acreditar la asistencia correspondiente a la clase virtual de hoy.</p>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6 mt-6">
+            <h3 class="!mt-0 !mb-4 !text-lg text-blue-900">Formulario de la clase</h3>
+            <p>Si el formulario no carga correctamente en esta página, pueden abrirlo desde este enlace:</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd14JirhpxIXrbjnZrE72_HNFlpzpRZ0SHLwA3vfheuqOxqHw/viewform" target="_blank" class="resource-link text-base">
+                👉 Abrir formulario para acreditar asistencia
+            </a>
+        </div>
+
+        <div class="mt-8 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd14JirhpxIXrbjnZrE72_HNFlpzpRZ0SHLwA3vfheuqOxqHw/viewform?embedded=true" class="form-frame" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <!-- Sección 3: Marco Teórico y Reflexión -->
+        <h2>3. ¿Qué tiene que ver la programación de computadoras (escribir código), con matemática?</h2>
+
+        <div class="quote-box">
+            <p class="text-gray-800 text-lg leading-relaxed mb-3">
+                «Todo educador debe haber sentido cierta envidia al ver a los niños jugar a los videojuegos: Si esa energía pudiera movilizarse al servicio del aprendizaje de algo que el educador valora. Pero la envidia puede adoptar formas muy diferentes. Los instruccionistas muestran su orientación concretando el deseo como un deseo de juegos que enseñen matemáticas u ortografía o geografía o lo que sea. La mente construccionista se revela cuando el deseo lleva a imaginar a los niños haciendo los juegos en lugar de sólo jugarlos. En lugar de desear que los juegos instruyan a los niños, anhelan que los niños construyan juegos»
+            </p>
+            <p class="text-right font-semibold text-gray-700 not-italic">— Seymour Papert</p>
+        </div>
+
+        <!-- Biografía en letra pequeña -->
+        <div class="bio-box my-6">
+            <h4 class="flex items-center gap-2">
+                <span>👤</span> ¿Quién fue Seymour Papert?
+            </h4>
+            <p class="mb-2">
+                <strong>Seymour Papert (1928–2016)</strong> fue un matemático, computólogo y educador sudafricano-estadounidense, reconocido como uno de los pioneros de la inteligencia artificial y de la integración de la tecnología en la educación.
+            </p>
+            <ul class="list-disc pl-5 space-y-1 mt-2 text-gray-600">
+                <li><strong>El Construccionismo:</strong> Discípulo y colaborador de Jean Piaget en Ginebra, Papert amplió la teoría del constructivismo para fundar el construccionismo, planteando que el aprendizaje es más profundo y significativo cuando las personas construyen activamente objetos tangibles o artefactos compartibles (como programas de computadora, modelos o robots).</li>
+                <li><strong>Lenguaje Logo y la "Tortuga":</strong> En el MIT (donde cofundó el Laboratorio de Inteligencia Artificial junto a Marvin Minsky), creó a finales de los años 60 el lenguaje de programación Logo. Su objetivo era dar a los niños una herramienta para pensar sobre el propio pensamiento, utilizando la famosa tortuga gráfica para explorar conceptos matemáticos y espaciales mediante código.</li>
+                <li><strong>Impacto educativo:</strong> Su visión sentó las bases para el aprendizaje basado en proyectos mediado por tecnología, inspirando desarrollos posteriores como la robótica educativa (Lego Mindstorms), el entorno de programación Scratch y el proyecto One Laptop per Child (OLPC). Su obra más influyente es el libro <em>Mindstorms: Children, Computers, and Powerful Ideas</em> (1980).</li>
+            </ul>
+        </div>
+
+        <div class="bg-amber-50 border-l-4 border-amber-500 rounded-lg p-6 my-6">
+            <p class="text-gray-800 leading-relaxed">
+                El profesor <strong>Mitchel Resnick</strong>, director del proyecto Lifelong Kindergarten en el MIT Media Lab y creador del lenguaje Scratch, afirma: 
+                <span class="italic font-medium">“En el mundo rápidamente cambiante de hoy, la gente debe continuamente crear soluciones creativas a problemas inesperados. El éxito se basa no sólo en lo que tú sabes o cuánto sabes, sino en tu habilidad de pensar y actuar creativamente.”</span> (Resnick 2007)
+            </p>
+            <p class="text-gray-800 leading-relaxed mt-4">
+                Por este motivo, desarrollar una actitud creativa resulta de interés también para las instituciones educativas, donde no suelen ejercitarse estas aptitudes. El trabajo escolar se centra, por lo general, en resolver problemas específicos, por lo que luego resulta muy difícil poder aplicar y adaptar estas soluciones como respuesta a problemas inesperados o diferentes. En este sentido, las nuevas tecnologías proporcionan una oportunidad para desarrollar tal actitud ya que permiten crear producciones en gran variedad de formatos (digitales o físicos) y proporcionan también plataformas digitales donde compartirlas y seguir construyéndolas de manera colaborativa.
+            </p>
+            <p class="text-xs text-gray-500 mt-4 border-t border-amber-200 pt-2">
+                <strong>Referencias:</strong> Bordignon, F. (2019) <em>Saberes digitales en la educación primaria y secundaria de la República Argentina</em>. <a href="https://unipe.educar.gob.ar/unipe" target="_blank" class="text-blue-600 underline">https://unipe.educar.gob.ar/unipe</a>
+            </p>
+        </div>
+
+        <hr class="my-12 border-gray-200">
+
+        <!-- Sección 4: Bibliografía y Recursos -->
+        <h2>4. Bibliografía y recursos complementarios</h2>
+        <p class="mb-4">Les comparto este libro con interesantes ejemplos de programación y robótica, junto a material de lectura complementario:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-2xl">📖</span>
+                    <h3 class="!mt-0 !text-base font-bold text-gray-800">Programación y robótica en Secundaria</h3>
+                </div>
+                <p class="text-sm text-gray-600 mb-4">Libro digital interactivo con interesantes ejemplos y propuestas didácticas.</p>
+                <a href="https://libros.catedu.es/books/programacion-y-robotica-en-secundaria" target="_blank" class="resource-link text-sm font-semibold">
+                    🔗 Acceder al libro en CATEDU
+                </a>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-2xl">📄</span>
+                    <h3 class="!mt-0 !text-base font-bold text-gray-800">Saberes digitales en la Educación Primaria y Secundaria Argentina</h3>
+                </div>
+                <p class="text-sm text-gray-600 mb-4">Bordignon, F. (2018) — Aportes conceptuales y pedagógicos.</p>
+                <a href="https://drive.google.com/file/d/14jaz5sAtGqHOlUvIUM92lYZ-2GXPCU7N/view?usp=sharing" target="_blank" class="resource-link text-sm font-semibold">
+                    📥 Descargar PDF en Google Drive
+                </a>
+            </div>
+        </div>
+
+        <footer class="mt-12 mb-20">
+            <div class="pt-10 border-t border-gray-200">
+                <a href="../index.html" class="back-link">
+                    <span>←</span> Volver a la Hoja de Ruta
+                </a>
+            </div>
+        </footer>
     </div>
-
-    <footer class="mt-10 mb-20">
-      <div class="pt-10 border-t border-gray-200">
-        <a href="../index.html" class="back-link">
-          <span>←</span> Volver a la Hoja de Ruta
-        </a>
-      </div>
-    </footer>
-  </div>
 </body>
 </html>
