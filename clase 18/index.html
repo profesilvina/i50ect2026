@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 18 - Enseñar con Tecnología</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fbfbfa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #37352f;
+      line-height: 1.6;
+    }
+    .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+    h2 { font-size: 2.25rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.5rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.75rem !important; }
+    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 6px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+    .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.65rem; }
+    .checkbox { min-width: 1.25rem; height: 1.25rem; border: 2px solid #d1d5db; border-radius: 4px; margin-top: 0.25rem; background: white; }
+    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .back-link:hover { color: #37352f; }
+    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+    .resource-link:hover { text-decoration: underline; }
+    .embed-frame { width: 100%; border: 0; background: white; }
+    .slides-frame { aspect-ratio: 16 / 9; min-height: 420px; border-radius: 8px; }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .card-challenge {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      transition: all 0.2s ease-in-out;
+    }
+    .card-challenge:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <img src="../banner50.png" alt="Banner" class="w-full h-auto mb-8">
+  <div class="notion-container">
+    <nav class="mb-12">
+      <a href="../index.html" class="back-link">
+        <span>←</span> Volver a la Hoja de Ruta
+      </a>
+    </nav>
+
+    <header class="mb-14">
+      <h1>Clase 18</h1>
+      <p class="text-gray-500 italic text-xl">Fecha: Jueves, 3 de septiembre · 10:30 – 11:30 am — Modalidad: Virtual SINCRÓNICA</p>
+      <h2 class="border-none !mt-4">Actividad: Programando en matemática</h2>
+    </header>
+
+    <!-- Enlace a la videollamada -->
+    <div class="bg-indigo-50 border-l-4 border-indigo-500 rounded-lg p-5 mb-8 flex items-center justify-between flex-wrap gap-4 shadow-sm">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">📹</span>
+        <div>
+          <h3 class="!mt-0 !mb-1 !text-lg font-bold text-indigo-950">Videollamada de la clase sincrónica</h3>
+          <p class="text-sm text-indigo-800">Jueves, 3 de septiembre · 10:30 – 11:30 am</p>
+        </div>
+      </div>
+      <a href="https://meet.google.com/syf-nggn-jgh" target="_blank" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow transition-colors flex items-center gap-2">
+        <span>Unirse a Google Meet</span> →
+      </a>
+    </div>
+
+    <!-- Tareas / Temas de la clase -->
+    <div class="aside border-l-4 border-purple-500">
+      <span>🎯</span>
+      <div>
+        <h3 class="!mt-0 !mb-2 !text-xl">En esta clase trabajaremos sobre:</h3>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>La <strong>actividad sobre Programación en Matemática</strong>, relacionando los objetivos que comparte la programación de computadoras con la matemática.</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>Seguimiento y dudas de la <strong>actividad de GeoGebra / FotoGebra</strong> con cada grupo.</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>Lectura y análisis de los <strong>componentes del pensamiento computacional</strong>.</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>Exploración de la programación por bloques con <strong>Pilas Bloques</strong> y resolución de desafíos.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recordatorio GeoGebra -->
+    <div class="bg-amber-50 border-l-4 border-amber-500 rounded-lg p-5 my-8">
+      <div class="flex items-start gap-3">
+        <span class="text-2xl">📐</span>
+        <div>
+          <h3 class="!mt-0 !mb-2 !text-lg font-bold text-amber-900">Seguimiento de la actividad de GeoGebra</h3>
+          <p class="text-amber-950 leading-relaxed text-sm">
+            Trabajaremos la actividad de GeoGebra para aclarar dudas, así que les pido que cada grupo tenga:
+          </p>
+          <ul class="list-disc pl-5 mt-2 space-y-1 text-sm text-amber-900">
+            <li>La foto que utilizarán.</li>
+            <li>La situación problema que pensaron.</li>
+            <li>El documento donde guardan las conversaciones que tienen con la IA asistente de FotoGebra.</li>
+            <li>La hoja dinámica que comenzaron a crear en GeoGebra.</li>
+          </ul>
+          <p class="text-xs font-semibold text-amber-800 mt-3">
+            💡 Si ya tienen algo armado, envíenlo por mail para revisarlo y hacerles una devolución.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <!-- Sección 1: Pensamiento computacional -->
+    <h2>1. Programación y Robótica en la Escuela Secundaria</h2>
+    <p class="mb-4">Para saber de qué trata la programación y la robótica en el nivel secundario y profundizar en el pensamiento computacional, revisamos los siguientes recursos:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-2xl">📚</span>
+          <h3 class="!mt-0 !text-base font-bold text-gray-800">Programación y Robótica en Secundaria</h3>
+        </div>
+        <p class="text-sm text-gray-600 mb-4">Libro digital de CATEDU sobre metodologías, herramientas y enfoques pedagógicos.</p>
+        <a href="https://libros.catedu.es/books/programacion-y-robotica-en-secundaria" target="_blank" class="resource-link text-sm font-semibold">
+          🔗 Ver libro en CATEDU
+        </a>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-2xl">🧩</span>
+          <h3 class="!mt-0 !text-base font-bold text-gray-800">Componentes del Pensamiento Computacional</h3>
+        </div>
+        <p class="text-sm text-gray-600 mb-4">Capítulo específico: descomposición, patrones, abstracción y algoritmos.</p>
+        <a href="https://libros.catedu.es/books/programacion-y-robotica-en-secundaria/page/13-componentes-del-pensamiento-computacional" target="_blank" class="resource-link text-sm font-semibold">
+          🔗 Leer sobre Pensamiento Computacional
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <!-- Sección 2: Presentación -->
+    <h2>2. Programación por texto o por bloques</h2>
+    <p class="mb-4">Volvemos a ver la presentación de la clase anterior para reflexionar sobre las diferencias y posibilidades didácticas de la programación basada en texto versus la programación por bloques:</p>
+
+    <div class="mt-6 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSLbCEZdGVlIhVCI4ZFX-pnDHGJkFZcRxHq0-t2HEXFbonaXEWlwamAbYKsIpUj0JoYP4bMYTo_zNRu/pubembed?start=false&loop=false&delayms=3000" class="embed-frame slides-frame" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <!-- Sección 3: Pilas Bloques -->
+    <h2>3. Investigamos sobre Pilas Bloques</h2>
+    <p class="mb-4">
+      <strong>Pilas Bloques</strong> es una herramienta desarrollada para aprender a programar a través de bloques, fomentando la construcción de algoritmos de manera intuitiva y visual.
+    </p>
+
+    <div class="bg-white border border-gray-200 rounded-xl p-6 my-6 shadow-sm flex flex-col md:flex-row items-center gap-6">
+      <div class="w-full md:w-1/3 flex justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuxyhHUp0nfUjQdw6SGuJfPoI3-xl8YevmN6kOdOsDw&s=10" alt="Logo Pilas Bloques" class="max-h-36 rounded-lg object-contain shadow-sm">
+      </div>
+      <div class="w-full md:w-2/3">
+        <h3 class="!mt-0 !mb-2 !text-xl text-gray-900 font-bold">Entorno Pilas Bloques</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Ingresá a la plataforma online para interactuar con los desafíos propuestos y ejercitar conceptos fundamentales de programación.
+        </p>
+        <a href="https://pilasbloques.program.ar/" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg shadow-sm transition-colors inline-block">
+          🚀 Abrir Pilas Bloques Online
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <!-- Sección 4: Desafíos a trabajar -->
+    <h2>4. Desafíos a trabajar en clase</h2>
+    <p class="mb-4">Realizaremos los siguientes desafíos seleccionados para ejercitar autómatas, procedimientos, repeticiones y parámetros aplicados a conceptos geométricos:</p>
+
+    <div class="space-y-6 my-6">
+      <!-- Nivel Intermedio -->
+      <div>
+        <h3 class="!text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800">Nivel Intermedio</span>
+          Autómatas, comandos, procedimientos y repetición
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="card-challenge">
+            <h4 class="font-bold text-gray-900 mb-1">Capy y Guyrá</h4>
+            <p class="text-xs text-gray-500 mb-3">Desafío 1001 — Trabajo con comandos y procedimientos.</p>
+            <a href="https://pilasbloques.program.ar/online/#/desafio/1001" target="_blank" class="resource-link text-sm font-semibold">
+              🎮 Resolver Desafío 1001 →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nivel Avanzado -->
+      <div>
+        <h3 class="!text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800">Nivel Avanzado</span>
+          Geometría, repetición y parámetros
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="card-challenge">
+            <h4 class="font-bold text-gray-900 mb-1">Constelación cuadrada</h4>
+            <p class="text-xs text-gray-500 mb-3">Desafío 1029 — Dibujo y patrones geométricos regulares.</p>
+            <a href="https://pilasbloques.program.ar/online/#/desafio/1029" target="_blank" class="resource-link text-sm font-semibold">
+              🎮 Resolver Desafío 1029 →
+            </a>
+          </div>
+
+          <div class="card-challenge">
+            <h4 class="font-bold text-gray-900 mb-1">Constelación hexágono</h4>
+            <p class="text-xs text-gray-500 mb-3">Desafío 1034 — Construcción de polígonos regulares.</p>
+            <a href="https://pilasbloques.program.ar/online/#/desafio/1034" target="_blank" class="resource-link text-sm font-semibold">
+              🎮 Resolver Desafío 1034 →
+            </a>
+          </div>
+
+          <div class="card-challenge">
+            <h4 class="font-bold text-gray-900 mb-1">Constelación triángulo</h4>
+            <p class="text-xs text-gray-500 mb-3">Desafío 1035 — Giros y ángulos en la repetición.</p>
+            <a href="https://pilasbloques.program.ar/online/#/desafio/1035" target="_blank" class="resource-link text-sm font-semibold">
+              🎮 Resolver Desafío 1035 →
+            </a>
+          </div>
+
+          <div class="card-challenge">
+            <h4 class="font-bold text-gray-900 mb-1">Constelación dentro de constelación</h4>
+            <p class="text-xs text-gray-500 mb-3">Desafío 1036 — Modularización y figuras anidadas.</p>
+            <a href="https://pilasbloques.program.ar/online/#/desafio/1036" target="_blank" class="resource-link text-sm font-semibold">
+              🎮 Resolver Desafío 1036 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-12 border-gray-200">
+
+    <!-- Sección 5: Video explicativo -->
+    <h2>5. Video tutorial de apoyo</h2>
+    <p class="mb-4">
+      ¿Cómo resolver el desafío de <strong>Dibujando Figuras dentro de figuras con parámetros</strong>? Mirá la siguiente explicación en video:
+    </p>
+
+    <div class="video-container my-6">
+      <iframe src="https://www.youtube.com/embed/70BQwAfwpbk" title="¿Cómo resolver el desafio de Dibujando Figuras dentro de figuras con parámetros?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p class="text-center text-sm text-gray-600 mt-2">
+      <a href="https://www.youtube.com/watch?v=70BQwAfwpbk" target="_blank" class="resource-link font-semibold">
+        🔗 Ver en YouTube: ¿Cómo resolver el desafío de Dibujando Figuras dentro de figuras con parámetros?
+      </a>
+    </p>
+
+    <footer class="mt-12 mb-20">
+      <div class="pt-10 border-t border-gray-200">
+        <a href="../index.html" class="back-link">
+          <span>←</span> Volver a la Hoja de Ruta
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
