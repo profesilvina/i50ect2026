@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 21: Construcción de la Secuencia Didáctica con TIC - Enseñar con Tecnología</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #fbfbfa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #37352f;
+      line-height: 1.6;
+    }
+    .notion-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+    h2 { font-size: 2.15rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.45rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.75rem !important; }
+    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .back-link:hover { color: #37352f; }
+    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+    .resource-link:hover { text-decoration: underline; }
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .feature-card:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner Superior Institucional -->
+  <img src="../banner50.png" alt="Banner Institucional" class="w-full h-auto mb-8">
+
+  <div class="notion-container">
+    <!-- Navegación -->
+    <nav class="mb-12">
+      <a href="../index.html" class="back-link">
+        <span>←</span> Volver a la Hoja de Ruta
+      </a>
+    </nav>
+
+    <!-- Encabezado de la Clase -->
+    <header class="mb-12">
+      <h1>Clase 21</h1>
+      <p class="text-gray-500 italic text-xl">Fecha: Jueves, 24 de septiembre de 2026 — Modalidad: Presencial</p>
+      <h2 class="border-none !mt-4">Taller de Construcción de la Secuencia Didáctica (SD) con TIC</h2>
+    </header>
+
+    <!-- Encuadre Pedagógico Inicial -->
+    <section class="mb-12">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Iniciamos formalmente el desarrollo del <strong>Trabajo Final Integrador</strong> de la cursada: la planificación de una <strong>Secuencia Didáctica (SD) con uso significativo de tecnologías digitales</strong>, articulando los marcos teóricos y las herramientas exploradas a lo largo del año (TPACK, SAMR, aula invertida, gamificación, GeoGebra, robótica y simuladores interactivos).
+      </p>
+
+      <div class="bg-purple-50 rounded-2xl p-6 border border-purple-200 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Modalidad de Elaboración y Acreditación</span>
+          <h3 class="!mt-1 !text-xl font-bold text-purple-950">Parejas o Individual · Defensa Oral Individual</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            El trabajo escrito de la secuencia didáctica se puede realizar <strong>en parejas (hasta dos integrantes)</strong> o de forma <strong>individual</strong>. Sin embargo, la <strong>defensa oral final —que define la promoción directa de la materia— es de carácter estrictamente individual</strong>.
+          </p>
+        </div>
+        <div class="w-12 h-12 rounded-xl bg-purple-200 text-[#9061f9] flex items-center justify-center font-bold text-2xl shrink-0">
+          <i class="fa-solid fa-users"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. Recuperación del cierre de la Clase 20 -->
+    <section class="mb-14">
+      <h2>1. Punto de partida: El núcleo didáctico de la propuesta</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Tal como anticipamos al cierre de la Clase 20, cada equipo o estudiante debe contar con las bases curriculares y pedagógicas definidas para el taller de hoy:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <div class="feature-card border-l-4 border-l-purple-600">
+          <div class="flex items-center gap-2 text-purple-900 font-bold text-base mb-2">
+            <i class="fa-solid fa-book-bookmark text-[#9061f9]"></i> Contenido Curricular Situado
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Seleccionar y recortar un contenido matemático específico correspondiente al <strong>Diseño Curricular de la Escuela Secundaria de la provincia de Buenos Aires</strong> (1.° a 6.° año).
+          </p>
+        </div>
+
+        <div class="feature-card border-l-4 border-l-blue-600">
+          <div class="flex items-center gap-2 text-blue-900 font-bold text-base mb-2">
+            <i class="fa-solid fa-lightbulb text-blue-600"></i> Situación Problema Auténtica
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Formular un <strong>problema o desafío inicial contextualizado</strong> que recupere saberes previos de los estudiantes de secundaria y despierte la necesidad cognitiva de construir el nuevo saber.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-sm text-amber-950 flex items-start gap-3">
+        <span class="text-xl text-amber-600 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i></span>
+        <div>
+          <strong>Transparencia y citación ética de Inteligencia Artificial:</strong> Si utilizan herramientas de IA generativa (ChatGPT, Claude, Gemini, Copilot u otras) para lluvia de ideas, redacción de consignas o elaboración de recursos, deben incluir un anexo detallando <strong>cuál fue la IA consultada y cuáles fueron los prompts textuales utilizados</strong>.
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Documentos Oficiales: Pautas y Rúbrica -->
+    <section class="mb-14">
+      <h2>2. Documentos oficiales para el diseño de la Secuencia Didáctica</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        En los siguientes documentos compartidos en Google Drive encontrarán las orientaciones metodológicas completas y la matriz de evaluación con la que será valorado su proyecto:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- Tarjeta Documento Marco SD -->
+        <a 
+          href="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/edit?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-purple-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-[#9061f9] flex items-center justify-center font-bold text-2xl mb-4 group-hover:bg-[#9061f9] group-hover:text-white transition">
+              <i class="fa-solid fa-file-waveform"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Guía y Estructura Oficial</span>
+            <h3 class="!mt-1 !text-xl font-bold text-gray-900 group-hover:text-purple-700 transition">Documento Marco: Secuencia Didáctica con TIC</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Pautas formales, componentes requeridos, articulación con recursos digitales y criterios para la integración con sentido pedagógico.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-[#9061f9] flex items-center gap-1">
+            Abrir documento en Google Docs <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+        <!-- Tarjeta Rúbrica 2do Cuatrimestre -->
+        <a 
+          href="https://drive.google.com/file/d/1kZepLJSHCvwmATkVMSz13GTpTEzNws4O/view?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-emerald-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-2xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Criterios de Acreditación</span>
+            <h3 class="!mt-1 !text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition">Rúbrica de Evaluación: 2.º Cuatrimestre</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Matriz analítica de evaluación con los niveles de logro esperados para la entrega escrita y la defensa oral individual.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-emerald-700 flex items-center gap-1">
+            Ver rúbrica en Google Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+      </div>
+
+      <!-- Visor Embebido del Documento Marco -->
+      <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+        <div class="flex items-center justify-between mb-3 px-2">
+          <span class="text-sm font-bold text-gray-700 flex items-center gap-2">
+            <i class="fa-solid fa-eye text-[#9061f9]"></i> Vista previa del Documento de la Secuencia Didáctica:
+          </span>
+          <a 
+            href="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/edit?usp=sharing" 
+            target="_blank" 
+            class="text-xs text-[#9061f9] font-bold hover:underline"
+          >
+            Pantalla completa ↗
+          </a>
+        </div>
+        <div class="relative w-full rounded-xl overflow-hidden border border-gray-200" style="height: 520px;">
+          <iframe 
+            src="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/preview" 
+            class="w-full h-full border-0"
+            title="Vista previa del Documento Marco de la Secuencia Didáctica">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Explorar recursos de GeoGebra para sacar ideas y usarlos en la SD -->
+    <section class="mb-14">
+      <h2>3. Explorar recursos de GeoGebra para sacar ideas y usarlos en la SD</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        La plataforma GeoGebra cuenta con un repositorio abierto de miles de materiales didácticos, construcciones dinámicas y libros interactivos creados por docentes de todo el mundo. Los invitamos a explorar este espacio para buscar inspiración, analizar decisiones pedagógicas e incorporar applets interactivos en las actividades de su Secuencia Didáctica:
+      </p>
+
+      <a 
+        href="https://www.geogebra.org/materials" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="feature-card group hover:border-emerald-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-emerald-50/40 p-6 rounded-2xl border border-emerald-200"
+      >
+        <div class="flex items-start md:items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-2xl shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Repositorio Abierto GeoGebra</span>
+            <h3 class="!mt-0.5 !text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition">Explorar Materiales y Recursos en GeoGebra</h3>
+            <p class="text-sm text-gray-600 mt-1 leading-relaxed">
+              Buscador oficial de applets, simuladores y actividades dinámicas clasificadas por temas matemáticos para nivel secundario.
+            </p>
+          </div>
+        </div>
+        <span class="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-sm group-hover:bg-emerald-800 transition">
+          <span>Abrir GeoGebra Materials</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
+    </section>
+
+    <!-- 4. Recursos audiovisuales para usar en la SD -->
+    <section class="mb-14">
+      <h2>4. Recursos audiovisuales para usar en la SD</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Para modelizar la integración del video educativo en los momentos de apertura, indagación o institucionalización, pueden utilizar videos con contenidos matemáticos de secundaria creados o curados por docentes argentinos:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <!-- Canal Aprendiendo Matemática -->
+        <a 
+          href="https://www.youtube.com/@AprendiendoMatematica" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-red-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 group-hover:text-red-600 transition text-base">Aprendiendo Matemática</h4>
+                <span class="text-xs text-gray-500">@AprendiendoMatematica</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Canal llevado adelante por profesores de matemática argentinos con explicaciones visuales, resolución paso a paso de problemas de secundaria y lenguaje accesible.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-red-600 flex items-center gap-1">
+            Explorar canal de YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+        <!-- Canal Mi Aula Argentina (UNESCO) -->
+        <a 
+          href="https://www.youtube.com/@MiAulaArgentina" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-sky-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 group-hover:text-sky-600 transition text-base">Mi Aula Argentina</h4>
+                <span class="text-xs text-gray-500">Iniciativa UNESCO · @MiAulaArgentina</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Repositorio federal de videos educativos curados para todas las áreas curriculares de la escuela secundaria, ideal para proyectos interdisciplinarios o contextualizados.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-sky-600 flex items-center gap-1">
+            Explorar canal de YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-xs sm:text-sm text-blue-950 flex items-start gap-3">
+        <span class="text-blue-600 text-lg mt-0.5"><i class="fa-solid fa-circle-info"></i></span>
+        <div>
+          <strong>Criterio pedagógico para el uso de video en la SD:</strong> El video no debe funcionar como un reemplazo de la enseñanza ni como mero elemento pasivo. Debe estar acompañado de consignas previas que orienten la mirada, pausas reflexivas de indagación o actividades posteriores de discusión e institucionalización.
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Recordatorio: Entrega del Portfolio Digital -->
+    <section class="mb-16">
+      <div class="bg-gray-100 rounded-2xl p-6 border border-gray-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-gray-500">Recordatorio Administrativo</span>
+          <h3 class="!mt-0 !text-xl font-bold text-gray-900">Entrega del Portfolio Digital de la Cursada</h3>
+          <p class="text-xs sm:text-sm text-gray-600 mt-1">
+            Se recuerda que el formulario oficial para subir el enlace del Portfolio Digital se encuentra habilitado desde el 17/9. Entregar <strong>únicamente cuando el portfolio se encuentre completamente finalizado</strong> con todas las actividades del año.
+          </p>
+        </div>
+        <a 
+          href="https://forms.gle/ehrMTvQx3jnGLhHG6" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="shrink-0 bg-gray-800 hover:bg-gray-900 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm transition shadow-sm whitespace-nowrap"
+        >
+          <i class="fa-solid fa-paper-plane mr-1.5"></i> Formulario de Entrega
+        </a>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="mt-12 mb-20">
+      <div class="pt-10 border-t border-gray-200 flex items-center justify-between flex-wrap gap-4">
+        <a href="../index.html" class="back-link">
+          <span>←</span> Volver a la Hoja de Ruta
+        </a>
+        <span class="text-xs text-gray-400">
+          Enseñar con Tecnología · ISFD 50 · Prof. Silvina Busto
+        </span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
