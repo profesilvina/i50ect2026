@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 22: Elaboración de actividades graduales y selección de recursos digitales - Enseñar con tecnología - ISFD 50</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #fbfbfa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #37352f;
+      line-height: 1.6;
+    }
+    .notion-container { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+    h2 { font-size: 2.15rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.45rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.75rem !important; }
+    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .back-link:hover { color: #37352f; }
+    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+    .resource-link:hover { text-decoration: underline; }
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .feature-card:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner Superior Institucional ISFD 50 -->
+  <img src="../banner50.png" alt="Banner Institucional" class="w-full h-auto mb-8">
+
+  <div class="notion-container">
+    <!-- Navegación -->
+    <nav class="mb-12">
+      <a href="../index.html" class="back-link">
+        <span>←</span> Volver a la hoja de ruta
+      </a>
+    </nav>
+
+    <!-- Encabezado de la Clase -->
+    <header class="mb-12">
+      <h1>Clase 22</h1>
+      <p class="text-gray-500 italic text-xl">Fecha: jueves 1 de octubre de 2026 — Modalidad: virtual</p>
+      <h2 class="border-none !mt-4">Elaboración de actividades graduales, búsqueda y selección de actividades digitales</h2>
+    </header>
+
+    <!-- Encuadre Pedagógico Inicial -->
+    <section class="mb-12">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        En esta segunda jornada dedicada a la construcción de la <strong>secuencia didáctica (SD) con TIC</strong>, avanzamos desde el recorte temático y la situación problemática inicial hacia el <strong>diseño articulado de las actividades de enseñanza y aprendizaje</strong>. El foco está puesto en la <strong>gradualidad cognitiva</strong> y en la <strong>inclusión significativa de tecnologías</strong> (entre 3 y 4 herramientas pertinentes), evitando que la herramienta digital sea un mero reemplazo del lápiz y papel.
+      </p>
+
+      <div class="bg-purple-50 rounded-2xl p-6 border border-purple-200 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Estructura curricular requerida</span>
+          <h3 class="!mt-1 !text-xl font-bold text-purple-950">Planificación para 3 encuentros de clase · Progresión gradual</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            La propuesta debe abarcar <strong>3 encuentros</strong> articulados. La complejidad matemática y la demanda cognitiva deben ser progresivas, asegurando que los momentos de exploración y debate precedan siempre a la institucionalización formal.
+          </p>
+        </div>
+        <div class="w-12 h-12 rounded-xl bg-purple-200 text-[#9061f9] flex items-center justify-center font-bold text-2xl shrink-0">
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. Criterios para la elaboración de actividades graduales -->
+    <section class="mb-14">
+      <h2>1. Criterios didácticos para la elaboración de actividades graduales</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Cada encuentro debe responder a una lógica pedagógica clara:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
+        <!-- Momento de Inicio -->
+        <div class="feature-card border-t-4 border-t-amber-500 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-amber-900 font-bold text-base mb-2">
+              <i class="fa-solid fa-seedling text-amber-600"></i> Situación problema inicial
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Auténtica, contextualizada y cercana al mundo de los estudiantes de secundaria. Debe movilizar saberes previos y generar la necesidad o el conflicto cognitivo que justifique el nuevo concepto.
+            </p>
+          </div>
+          <div class="mt-3 text-xs text-amber-800 bg-amber-50 p-2 rounded-lg border border-amber-200">
+            ⚠️ <strong>Evitar:</strong> iniciar con definiciones formales, fórmulas abstractas o videos teóricos sin problematización previa.
+          </div>
+        </div>
+
+        <!-- Momento de Desarrollo -->
+        <div class="feature-card border-t-4 border-t-blue-500 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-blue-900 font-bold text-base mb-2">
+              <i class="fa-solid fa-arrows-split-up-and-left text-blue-600"></i> Exploración y desarrollo
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Actividades donde los alumnos tengan un rol activo: manipular variables, conjeturar, analizar casos, simular parámetros y contrastar hipótesis de manera colaborativa.
+            </p>
+          </div>
+          <div class="mt-3 text-xs text-blue-800 bg-blue-50 p-2 rounded-lg border border-blue-200">
+            💡 <strong>Enfoque:</strong> favorecer la producción matemática y la interacción genuina con el recurso digital.
+          </div>
+        </div>
+
+        <!-- Momento de Cierre -->
+        <div class="feature-card border-t-4 border-t-emerald-500 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-emerald-900 font-bold text-base mb-2">
+              <i class="fa-solid fa-flag-checkered text-emerald-600"></i> Institucionalización y síntesis
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Puesta en común, sistematización colectiva de lo construido, formalización matemática precisa a cargo del docente y propuestas de evaluación formativa.
+            </p>
+          </div>
+          <div class="mt-3 text-xs text-emerald-800 bg-emerald-50 p-2 rounded-lg border border-emerald-200">
+            🎯 <strong>Secuencia:</strong> la formalización matemática llega como conclusión de lo explorado y debatido.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Búsqueda y selección de actividades digitales -->
+    <section class="mb-14">
+      <h2>2. Búsqueda y selección intencional de recursos digitales</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        La secuencia didáctica debe incorporar entre <strong>3 y 4 herramientas o recursos tecnológicos pertinentes</strong> que potencien el aprendizaje (modelo SAMR de Puentedura y Peret, apuntando a niveles de <em>modificación</em> o <em>redefinición</em>):
+      </p>
+
+      <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-xs sm:text-sm text-amber-950 mb-6 flex items-start gap-3">
+        <span class="text-xl text-amber-600 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i></span>
+        <div>
+          <strong>Criterio de interactividad:</strong> Desalentar el uso de herramientas digitales para reproducir tareas mecánicas de lápiz y papel (por ejemplo, usar GeoGebra únicamente para verificar cuentas hechas a mano o pegar capturas estáticas). Si se propone aula invertida, incluir instrumentos breves de seguimiento (formularios) para constatar comprensión previa y destinar la clase a la producción matemática compleja.
+        </div>
+      </div>
+
+      <!-- Tarjeta GeoGebra Materials -->
+      <a 
+        href="https://www.geogebra.org/materials" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="feature-card group hover:border-emerald-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-emerald-50/40 p-6 rounded-2xl border border-emerald-200 mb-6"
+      >
+        <div class="flex items-start md:items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-2xl shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Repositorio abierto de GeoGebra</span>
+            <h3 class="!mt-0.5 !text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition">Explorar materiales y recursos en GeoGebra</h3>
+            <p class="text-sm text-gray-600 mt-1 leading-relaxed">
+              Buscador oficial de construcciones dinámicas, applets interactivos y hojas de trabajo clasificadas por temas matemáticos para secundaria (Novembre y Carrillo de Albornoz).
+            </p>
+          </div>
+        </div>
+        <span class="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-sm group-hover:bg-emerald-800 transition">
+          <span>Abrir GeoGebra Materials</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
+
+      <!-- Tarjetas Canales Educativos de YouTube -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <!-- Canal Aprendiendo Matemática -->
+        <a 
+          href="https://www.youtube.com/@AprendiendoMatematica" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-red-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 group-hover:text-red-600 transition text-base">Aprendiendo Matemática</h4>
+                <span class="text-xs text-gray-500">@AprendiendoMatematica</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Videos didácticos realizados por docentes argentinos con explicaciones visuales claras y resolución guiada de problemas para nivel secundario.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-red-600 flex items-center gap-1">
+            Explorar canal de YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+        <!-- Canal Mi Aula Argentina (UNESCO) -->
+        <a 
+          href="https://www.youtube.com/@MiAulaArgentina" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-sky-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 group-hover:text-sky-600 transition text-base">Mi Aula Argentina</h4>
+                <span class="text-xs text-gray-500">Iniciativa UNESCO · @MiAulaArgentina</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Banco federal de contenidos audiovisuales curriculares para la escuela secundaria argentina, ideal para disparar debates o contextualizar contenidos (Sagol).
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-sky-600 flex items-center gap-1">
+            Explorar canal de YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+      </div>
+
+      <!-- Otros recursos y pensamiento computacional -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <div class="feature-card border-l-4 border-l-indigo-600">
+          <div class="flex items-center gap-2 text-indigo-900 font-bold text-sm mb-1">
+            <i class="fa-solid fa-code text-indigo-600"></i> Pensamiento computacional o simuladores
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Si incorporan Scratch, Python o simuladores PhET, asegurarse de que los estudiantes interpreten algoritmos, modifiquen parámetros o programen resoluciones, evitando trivias prediseñadas sin desafío conceptual.
+          </p>
+        </div>
+
+        <div class="feature-card border-l-4 border-l-teal-600">
+          <div class="flex items-center gap-2 text-teal-900 font-bold text-sm mb-1">
+            <i class="fa-solid fa-robot text-teal-600"></i> Citación ética de inteligencia artificial
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            En caso de consultar IA generativa (ChatGPT, Claude, Gemini, Copilot), se debe incluir en el anexo de la SD la herramienta empleada y los <strong>prompts textuales utilizados</strong> (Ferrarelli / Sagol).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Marco teórico y preparación para la defensa oral -->
+    <section class="mb-14">
+      <h2>3. Marco teórico y anticipación del coloquio oral</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Tengan presente que la <strong>defensa oral final es de carácter estrictamente individual</strong>. En dicha instancia deberán defender las decisiones curriculares, pedagógicas y tecnológicas adoptadas:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+          <span class="text-xs font-bold text-purple-700 uppercase">Mishra y Koehler</span>
+          <h4 class="font-bold text-gray-900 text-sm mt-1">Modelo TPACK</h4>
+          <p class="text-xs text-gray-600 mt-1">Intersección disciplinar, pedagógica y tecnológica.</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+          <span class="text-xs font-bold text-blue-700 uppercase">Puentedura y Peret</span>
+          <h4 class="font-bold text-gray-900 text-sm mt-1">Modelo SAMR</h4>
+          <p class="text-xs text-gray-600 mt-1">Clasificación: sustitución, aumento, modificación, redefinición.</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+          <span class="text-xs font-bold text-emerald-700 uppercase">Sagol / Magadán</span>
+          <h4 class="font-bold text-gray-900 text-sm mt-1">Aula aumentada</h4>
+          <p class="text-xs text-gray-600 mt-1">Curación de contenidos y tecnologías en acción.</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+          <span class="text-xs font-bold text-amber-700 uppercase">Novembre / Albornoz</span>
+          <h4 class="font-bold text-gray-900 text-sm mt-1">Didáctica y GeoGebra</h4>
+          <p class="text-xs text-gray-600 mt-1">Dinamismo, conjeturación y obstáculos cognitivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Documentos oficiales para el diseño de la secuencia didáctica -->
+    <section class="mb-14">
+      <h2>4. Documentos oficiales para el diseño de la secuencia didáctica</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Consulten la plantilla oficial y la rúbrica de evaluación analítica:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- Tarjeta Documento Marco SD -->
+        <a 
+          href="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/edit?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-purple-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-[#9061f9] flex items-center justify-center font-bold text-2xl mb-4 group-hover:bg-[#9061f9] group-hover:text-white transition">
+              <i class="fa-solid fa-file-waveform"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Guía y estructura oficial</span>
+            <h3 class="!mt-1 !text-xl font-bold text-gray-900 group-hover:text-purple-700 transition">Documento marco: Secuencia didáctica con TIC</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Estructura formal, componentes requeridos, articulación con recursos digitales y pautas para la fundamentación pedagógica.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-[#9061f9] flex items-center gap-1">
+            Abrir documento en Google Docs <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+        <!-- Tarjeta Rúbrica 2do Cuatrimestre -->
+        <a 
+          href="https://drive.google.com/file/d/1kZepLJSHCvwmATkVMSz13GTpTEzNws4O/view?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-emerald-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-2xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Criterios de acreditación</span>
+            <h3 class="!mt-1 !text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition">Rúbrica de evaluación: 2.º cuatrimestre</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Matriz analítica de evaluación con los niveles de logro esperados para la entrega escrita y la defensa oral individual.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-emerald-700 flex items-center gap-1">
+            Ver rúbrica en Google Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+      </div>
+
+      <!-- Visor Embebido del Documento Marco -->
+      <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+        <div class="flex items-center justify-between mb-3 px-2">
+          <span class="text-sm font-bold text-gray-700 flex items-center gap-2">
+            <i class="fa-solid fa-eye text-[#9061f9]"></i> Vista previa del documento de la secuencia didáctica:
+          </span>
+          <a 
+            href="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/edit?usp=sharing" 
+            target="_blank" 
+            class="text-xs text-[#9061f9] font-bold hover:underline"
+          >
+            Pantalla completa ↗
+          </a>
+        </div>
+        <div class="relative w-full rounded-xl overflow-hidden border border-gray-200" style="height: 520px;">
+          <iframe 
+            src="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/preview" 
+            class="w-full h-full border-0"
+            title="Vista previa del documento marco de la secuencia didáctica">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Acreditación de asistencia (clase virtual 1/10) y entrega del portfolio digital -->
+    <section class="mb-16">
+      <div class="bg-emerald-50 rounded-2xl p-6 border-2 border-emerald-300 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          <span class="inline-block px-2.5 py-1 bg-emerald-200 text-emerald-900 rounded-md text-xs font-bold uppercase tracking-wider mb-2">
+            Acreditación de asistencia · Clase virtual 1/10
+          </span>
+          <h3 class="!mt-0 !text-2xl font-bold text-emerald-950">Entrega del portfolio digital de la cursada</h3>
+          <p class="text-sm text-gray-700 mt-2 leading-relaxed">
+            Se acredita la asistencia de la <strong>Clase 22 (virtual) del 1/10</strong> con la entrega del portfolio a través del formulario oficial.
+          </p>
+          <ul class="text-xs sm:text-sm text-gray-600 mt-2 space-y-1">
+            <li>• <strong>Condición de entrega:</strong> Subir el enlace únicamente cuando el portfolio se encuentre completamente finalizado con todas las producciones y evidencias del año.</li>
+            <li>• ⏰ <strong>Fecha límite para completarlo:</strong> Tienen tiempo de enviarlo hasta el <strong>jueves 8 de octubre de 2026 inclusive</strong>.</li>
+          </ul>
+        </div>
+        <a 
+          href="https://forms.gle/ehrMTvQx3jnGLhHG6" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="shrink-0 bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition shadow-md whitespace-nowrap inline-flex items-center gap-2"
+        >
+          <i class="fa-solid fa-paper-plane"></i> Formulario de entrega
+        </a>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="mt-12 mb-20">
+      <div class="pt-10 border-t border-gray-200 flex items-center justify-between flex-wrap gap-4">
+        <a href="../index.html" class="back-link">
+          <span>←</span> Volver a la hoja de ruta
+        </a>
+        <span class="text-xs text-gray-400">
+          Enseñar con Tecnología · ISFD 50 · Prof. Silvina Busto
+        </span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
