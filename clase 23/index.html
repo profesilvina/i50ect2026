@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 23: Taller de producción y selección de recursos digitales para la Secuencia Didáctica - Enseñar con tecnología - ISFD 50</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #fbfbfa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #37352f;
+      line-height: 1.6;
+    }
+    .notion-container { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.5rem; color: #1a1a1a; }
+    h2 { font-size: 2.15rem !important; font-weight: 800 !important; color: #1a1a1a !important; margin-top: 2.5rem !important; margin-bottom: 1.25rem !important; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.45rem !important; font-weight: 700 !important; color: #374151 !important; margin-top: 1.75rem !important; }
+    .aside { background: #f1f0ef; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; display: flex; gap: 1rem; }
+    .back-link { color: #838170; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .back-link:hover { color: #37352f; }
+    .resource-link { color: #2383e2; font-weight: 600; text-decoration: none; word-break: break-word; }
+    .resource-link:hover { text-decoration: underline; }
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .feature-card:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .step-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 9999px;
+      background-color: #9061f9;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner Superior Institucional ISFD 50 -->
+  <img src="../banner50.png" alt="Banner Institucional" class="w-full h-auto mb-8">
+
+  <div class="notion-container">
+    <!-- Navegación -->
+    <nav class="mb-12">
+      <a href="../index.html" class="back-link">
+        <span>←</span> Volver a la hoja de ruta
+      </a>
+    </nav>
+
+    <!-- Encabezado de la Clase -->
+    <header class="mb-12">
+      <h1>Clase 23</h1>
+      <p class="text-gray-500 italic text-xl">Fecha: jueves 8 de octubre de 2026 — Modalidad: presencial (Laboratorio / Taller en parejas)</p>
+      <h2 class="border-none !mt-4">Taller de búsqueda, selección y producción de recursos digitales para la Secuencia Didáctica con TIC</h2>
+    </header>
+
+    <!-- Encuadre Pedagógico Inicial -->
+    <section class="mb-12">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        En este tercer encuentro dedicado a la construcción de la <strong>Secuencia Didáctica (SD) con TIC</strong>, nos encontramos en el aula para trabajar en formato de <strong>laboratorio de co-diseño</strong>. El objetivo de la jornada es seleccionar, probar, configurar y vincular los <strong>3 a 4 recursos tecnológicos</strong> que utilizarán sus futuros estudiantes secundarios a lo largo de los 3 encuentros planificados.
+      </p>
+
+      <div class="bg-purple-50 rounded-2xl p-6 border border-purple-200 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Criterio didáctico central</span>
+          <h3 class="!mt-1 !text-xl font-bold text-purple-950">La tecnología como medio para «hacer matemática»</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Cada recurso TIC incorporado debe responder a una pregunta orientadora irrenunciable: <strong>¿Qué permite explorar, conjeturar o modelizar esta herramienta que con lápiz y papel sería inviable o tedioso?</strong> Apuntamos a superar la mera sustitución cosmética para situarnos en niveles de <em>modificación</em> o <em>redefinición</em> (modelo SAMR).
+          </p>
+        </div>
+        <div class="w-12 h-12 rounded-xl bg-purple-200 text-[#9061f9] flex items-center justify-center font-bold text-2xl shrink-0">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+      </div>
+
+      <!-- Alerta Fecha de Entrega de la Secuencia Didáctica -->
+      <div class="mt-6 bg-white border-2 border-purple-500 rounded-2xl p-6 text-gray-900 shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-3xl shrink-0">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-100 text-purple-800 border border-purple-300 mb-1">
+              Cronograma Oficial del Trabajo Final
+            </span>
+            <h3 class="!mt-0 !text-xl md:!text-2xl font-black text-purple-950">
+              Fecha de entrega de la Secuencia Didáctica (SD): Jueves 29 de octubre (29/10)
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              El documento oficial completo en Google Docs debe quedar finalizado y entregado el <strong>29/10</strong> para habilitar la posterior defensa oral individual.
+            </p>
+          </div>
+        </div>
+        <span class="shrink-0 px-4 py-2 bg-purple-700 text-white font-black rounded-xl text-sm shadow">
+          🗓️ Entrega: 29/10
+        </span>
+      </div>
+    </section>
+
+    <!-- 1. Dinámica del Taller Presencial en el Aula -->
+    <section class="mb-14">
+      <h2>1. Dinámica del taller presencial en el aula</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        La jornada de trabajo en el profesorado se organizará en tres momentos articulados:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
+        <!-- Momento 1 -->
+        <div class="feature-card border-t-4 border-t-purple-600 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-purple-950 font-bold text-base mb-2">
+              <span class="step-pill">1</span> Apertura y mapeo
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Puesta en común sobre los contenidos y problemas iniciales de cada pareja. Acuerdos sobre la integración de recursos interactivos y criterios de viabilidad técnica en las escuelas secundarias bonaerenses.
+            </p>
+          </div>
+          <div class="mt-3 text-xs text-purple-900 bg-purple-50 p-2 rounded-lg border border-purple-200">
+            🎯 <strong>Foco:</strong> Claridad en el propósito matemático de cada herramienta.
+          </div>
+        </div>
+
+        <!-- Momento 2 -->
+        <div class="feature-card border-t-4 border-t-blue-600 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-blue-950 font-bold text-base mb-2">
+              <span class="step-pill !bg-blue-600">2</span> Co-diseño en parejas
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Trabajo directo sobre el Google Doc oficial compartido. Búsqueda y creación de applets dinámicos, hojas de cálculo o simuladores. Redacción de las consignas precisas que guiarán la tarea de los estudiantes.
+            </p>
+          </div>
+          <div class="mt-3 text-xs text-blue-900 bg-blue-50 p-2 rounded-lg border border-blue-200">
+            💻 <strong>Foco:</strong> Construcción o adaptación de los materiales digitales.
+          </div>
+        </div>
+
+        <!-- Momento 3 -->
+        <div class="feature-card border-t-4 border-t-emerald-600 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-emerald-950 font-bold text-base mb-2">
+              <span class="step-pill !bg-emerald-600">3</span> Testeo cruzado
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Intercambio entre parejas: una pareja asume el rol de alumnos secundarios y prueba el recurso digital diseñado por otro equipo, brindando retroalimentación de usabilidad, legibilidad y posibles fallas.
+            </p>
+          </div>
+          <div class="mt-3 text-xs text-emerald-900 bg-emerald-50 p-2 rounded-lg border border-emerald-200">
+            🔄 <strong>Foco:</strong> Evaluación formativa entre pares y ajuste de consignas.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Banco de Herramientas y Recursos Digitales Recomendados -->
+    <section class="mb-14">
+      <h2>2. Banco de recursos digitales y entornos matemáticos interactivos</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Recuerden que la secuencia debe articular entre <strong>3 y 4 recursos digitales diferentes</strong>. Pueden seleccionar, adaptar o construir propuestas a partir de los siguientes entornos trabajados durante la cursada:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <!-- GeoGebra -->
+        <div class="feature-card flex flex-col justify-between border-l-4 border-l-emerald-600">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-base">GeoGebra (Applets y Construcciones Dinámicas)</h4>
+                <span class="text-xs text-emerald-700 font-semibold">Geometría, Álgebra y Funciones</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Ideal para manipular parámetros mediante deslizadores, conjeturar propiedades geométricas invariantes, analizar familias de funciones y modelizar situaciones reales.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+            <span class="text-gray-500">Materiales y applets</span>
+            <a href="https://www.geogebra.org/materials" target="_blank" rel="noopener noreferrer" class="font-bold text-emerald-700 hover:underline flex items-center gap-1">
+              geogebra.org/materials <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PhET Simulaciones -->
+        <div class="feature-card flex flex-col justify-between border-l-4 border-l-sky-600">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-flask-vial"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-base">Simuladores PhET (Universidad de Colorado)</h4>
+                <span class="text-xs text-sky-700 font-semibold">Modelización y Simulación Matemática</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Laboratorios virtuales interactivos para explorar fracciones, áreas, funciones lineales y cuadráticas, trigonometría, probabilidad y vectores con retroalimentación visual inmediata.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+            <span class="text-gray-500">Simulaciones gratuitas</span>
+            <a href="https://phet.colorado.edu/es/simulations/filter?subjects=math" target="_blank" rel="noopener noreferrer" class="font-bold text-sky-700 hover:underline flex items-center gap-1">
+              phet.colorado.edu <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Planillas de Cálculo -->
+        <div class="feature-card flex flex-col justify-between border-l-4 border-l-green-600">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-table-cells"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-base">Planillas de Cálculo (Hojas de Google / Excel)</h4>
+                <span class="text-xs text-green-700 font-semibold">Álgebra, Regularidades y Estadística</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Permite a los estudiantes formular hipótesis numéricas, automatizar cálculos iterativos, generar gráficos dinámicos y descubrir patrones algebraicos mediante fórmulas de celda.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+            <span class="text-gray-500">Plantillas en Drive</span>
+            <span class="font-semibold text-green-800">Uso online y offline</span>
+          </div>
+        </div>
+
+        <!-- Audiovisuales Curriculares -->
+        <div class="feature-card flex flex-col justify-between border-l-4 border-l-red-600">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-base">Videos Curriculares con Guía Activa</h4>
+                <span class="text-xs text-red-700 font-semibold">Aprendiendo Matemática / Mi Aula Argentina</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Videos cortos seleccionados intencionalmente para disparar un debate, contextualizar un problema o institucionalizar un concepto, acompañados siempre de una guía de preguntas reflexivas.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+            <span class="text-gray-500">Canales verificados</span>
+            <span class="font-semibold text-red-700">Evitar visualización pasiva</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alertas de Viabilidad Técnica -->
+      <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-xl text-xs sm:text-sm text-amber-950 mb-6 flex items-start gap-3">
+        <span class="text-xl text-amber-600 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i></span>
+        <div>
+          <strong class="text-amber-900 block mb-1">Checklist de Viabilidad Técnica:</strong>
+          <ul class="space-y-1 text-gray-700">
+            <li>• <strong>Dispositivos:</strong> ¿La actividad está pensada para celular, netbook de Conectar Igualdad o sala de computación? Asegurar que la interfaz sea cómoda y legible.</li>
+            <li>• <strong>Conectividad escolar:</strong> ¿Qué ocurre si se corta Internet en el aula? Prever si el recurso puede descargarse previamente (por ejemplo, GeoGebra clásico portable, planillas en formato `.xlsx` o videos guardados localmente).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Documentos Oficiales de la Secuencia y Rúbrica -->
+    <section class="mb-14">
+      <h2>3. Documentos oficiales de trabajo y consulta</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Recuerden trabajar directamente sobre la copia del documento oficial compartida con la docente:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- Tarjeta Documento Marco SD -->
+        <a 
+          href="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/edit?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-purple-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-[#9061f9] flex items-center justify-center font-bold text-2xl mb-4 group-hover:bg-[#9061f9] group-hover:text-white transition">
+              <i class="fa-solid fa-file-waveform"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Plantilla oficial de trabajo</span>
+            <h3 class="!mt-1 !text-xl font-bold text-gray-900 group-hover:text-purple-700 transition">Documento marco: Secuencia didáctica con TIC</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Estructura formal, apartado de recursos TIC requeridos (enlaces, capturas y consignas) y pautas de fundamentación pedagógica.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-[#9061f9] flex items-center gap-1">
+            Abrir documento en Google Docs <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+        <!-- Tarjeta Rúbrica 2do Cuatrimestre -->
+        <a 
+          href="https://drive.google.com/file/d/1kZepLJSHCvwmATkVMSz13GTpTEzNws4O/view?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="feature-card group hover:border-emerald-400 flex flex-col justify-between"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-2xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Criterios de acreditación</span>
+            <h3 class="!mt-1 !text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition">Rúbrica de evaluación: 2.º cuatrimestre</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Matriz analítica institucional con los niveles de logro esperados para la entrega escrita y la defensa oral individual.
+            </p>
+          </div>
+          <span class="mt-4 text-xs font-bold text-emerald-700 flex items-center gap-1">
+            Ver rúbrica en Google Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+      </div>
+
+      <!-- Visor Embebido del Documento Marco -->
+      <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+        <div class="flex items-center justify-between mb-3 px-2">
+          <span class="text-sm font-bold text-gray-700 flex items-center gap-2">
+            <i class="fa-solid fa-eye text-[#9061f9]"></i> Vista previa de la plantilla oficial de la secuencia:
+          </span>
+          <a 
+            href="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/edit?usp=sharing" 
+            target="_blank" 
+            class="text-xs text-[#9061f9] font-bold hover:underline"
+          >
+            Pantalla completa ↗
+          </a>
+        </div>
+        <div class="relative w-full rounded-xl overflow-hidden border border-gray-200" style="height: 520px;">
+          <iframe 
+            src="https://docs.google.com/document/d/105CqmMxSHR9VYUgvsW_Ni68aVXzaXFhU6JjkrjJpD-s/preview" 
+            class="w-full h-full border-0"
+            title="Vista previa del documento marco de la secuencia didáctica">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Recordatorio: Cierre de Entrega del Portfolio Digital -->
+    <section class="mb-16">
+      <div class="bg-amber-50 rounded-2xl p-6 border-2 border-amber-300 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          <span class="inline-block px-2.5 py-1 bg-amber-200 text-amber-950 rounded-md text-xs font-bold uppercase tracking-wider mb-2">
+            ⏰ Vencimiento formal · Jueves 8 de octubre
+          </span>
+          <h3 class="!mt-0 !text-2xl font-bold text-amber-950">Cierre de entrega del portfolio digital</h3>
+          <p class="text-sm text-gray-700 mt-2 leading-relaxed">
+            Hoy jueves 8 de octubre vence el plazo para enviar el enlace público de su <strong>Portfolio Digital finalizado</strong> con todas las producciones del año a través del formulario oficial.
+          </p>
+          <p class="text-xs text-amber-900 mt-2">
+            ⚠️ Recuerden verificar que el enlace tenga permisos de visualización pública antes de enviarlo.
+          </p>
+        </div>
+        <a 
+          href="https://forms.gle/ehrMTvQx3jnGLhHG6" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="shrink-0 bg-amber-700 hover:bg-amber-800 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition shadow-md whitespace-nowrap inline-flex items-center gap-2"
+        >
+          <i class="fa-solid fa-paper-plane"></i> Formulario del portfolio
+        </a>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="mt-12 mb-20">
+      <div class="pt-10 border-t border-gray-200 flex items-center justify-between flex-wrap gap-4">
+        <a href="../index.html" class="back-link">
+          <span>←</span> Volver a la hoja de ruta
+        </a>
+        <span class="text-xs text-gray-400">
+          Enseñar con Tecnología · ISFD 50 · Prof. Silvina Busto
+        </span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
